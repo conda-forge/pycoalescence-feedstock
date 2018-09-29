@@ -36,7 +36,7 @@ requirements:
   run:
     - python
     - boost
-    - gdal >=2.1.0
+    - {{ pin_compatible('gdal', max_pin='x.x') }}
     - sqlite
     - matplotlib
     - numpy

@@ -15,7 +15,7 @@ build:
   number: 2
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
   detect_binary_files_with_prefix: True
-  skip: True  # [(win and vc<14)]
+  skip: True  # [(win and vc<14) or linux]
 
 requirements:
   build:
@@ -29,6 +29,7 @@ requirements:
     - setuptools
     - boost
     - gdal >=2.1.0
+    - ncurses >=6.0.0  # [osx or linux]
     - sqlite
     - matplotlib
     - numpy >=1.11.0
@@ -37,6 +38,7 @@ requirements:
     - python
     - boost
     - {{ pin_compatible('gdal', max_pin='x.x') }}
+    - {{ pin_compatible('ncurses', max_pin='x.x') }}  # [osx or linux]
     - sqlite
     - matplotlib
     - numpy

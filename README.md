@@ -10,7 +10,7 @@ Feedstock license: BSD 3-Clause
 Summary: Spatially-explicit neutral ecology simulator using coalescence methods
 
 pycoalescence is an API for easy interfacing with the necsim c++ neutral
-simulator for running ecological models under the effects of
+simulator for ecological models under the effects of
 dispersal, speciation and ecological drift in a spatially-explicit
 manner.
 

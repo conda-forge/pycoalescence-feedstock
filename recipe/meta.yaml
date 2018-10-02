@@ -15,7 +15,7 @@ build:
   number: 2
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
   detect_binary_files_with_prefix: True
-  skip: True  # [(win and vc<14) or linux]
+  skip: True  # [(win and vc<14)]
 
 requirements:
   build:

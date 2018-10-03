@@ -29,7 +29,6 @@ requirements:
     - setuptools
     - boost
     - gdal >=2.1.0
-    - ncurses >=6.0.0  # [osx]
     - sqlite
     - matplotlib
     - numpy >=1.11.0
@@ -38,7 +37,6 @@ requirements:
     - python
     - boost
     - {{ pin_compatible('gdal', max_pin='x.x') }}
-    - {{ pin_compatible('ncurses', max_pin='x.x') }}  # [osx]
     - sqlite
     - matplotlib
     - numpy

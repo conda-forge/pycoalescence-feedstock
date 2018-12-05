@@ -1,0 +1,41 @@
+MACOSX_DEPLOYMENT_TARGET:
+- '10.9'
+boost:
+- 1.68.0
+<<<<<<< HEAD:.ci_support/osx_python3.6.yaml
+=======
+build_number_decrement:
+- '1000'
+>>>>>>> d89a39df329bc6e51369d47c5285341881233d0f:.ci_support/osx_c_compilertoolchain_ccxx_compilertoolchain_cxxpython3.6.yaml
+c_compiler:
+- toolchain_c
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- toolchain_cxx
+macos_machine:
+- x86_64-apple-darwin13.4.0
+macos_min_version:
+- '10.9'
+numpy:
+- '1.9'
+pin_run_as_build:
+  boost:
+    max_pin: x.x.x
+  python:
+    min_pin: x.x
+    max_pin: x.x
+  sqlite:
+    max_pin: x
+python:
+- '3.6'
+sqlite:
+- '3'
+zip_keys:
+- - c_compiler
+  - cxx_compiler
+  - channel_sources
+  - channel_targets
+  - build_number_decrement

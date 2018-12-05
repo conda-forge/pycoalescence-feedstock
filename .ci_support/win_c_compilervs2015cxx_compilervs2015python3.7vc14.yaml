@@ -1,21 +1,15 @@
-MACOSX_DEPLOYMENT_TARGET:
-- '10.9'
 boost:
 - 1.68.0
 c_compiler:
-- toolchain_c
+- vs2015
 channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
 cxx_compiler:
-- toolchain_cxx
-macos_machine:
-- x86_64-apple-darwin13.4.0
-macos_min_version:
-- '10.9'
+- vs2015
 numpy:
-- '1.9'
+- '1.11'
 pin_run_as_build:
   boost:
     max_pin: x.x.x
@@ -24,7 +18,16 @@ pin_run_as_build:
     max_pin: x.x
   sqlite:
     max_pin: x
+  vc:
+    max_pin: x
 python:
-- '3.6'
+- '3.7'
 sqlite:
 - '3'
+vc:
+- '14'
+zip_keys:
+- - python
+  - vc
+  - c_compiler
+  - cxx_compiler

@@ -27,6 +27,7 @@ class TestImports(unittest.TestCase):
 	def testImportNecsim(self):
 		"""Tests that necsim imports correctly."""
 		try:
+			import pycoalescence.necsim.libnecsim as libnecsim
 			from pycoalescence.necsim import libnecsim
 			if libnecsim is None:
 				raise ImportError("libnecsim is None.")

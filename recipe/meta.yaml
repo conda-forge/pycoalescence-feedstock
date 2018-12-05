@@ -1,6 +1,6 @@
 {% set name = "pycoalescence" %}
-{% set version = "1.2.7a5" %}
-{% set sha256 = "691a76b5221f90695598212d9e5d4a78b30e38dceab407a09f3c377a53d66fab" %}
+  {% set version = "1.2.7a7" %}
+  {% set sha256 = "560f4545a32034ff2be855ed5ae510f7d4c0b05da6ae64c340a1943ceaa38023" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,7 @@ requirements:
     - python
     - pip
     - setuptools
-    - boost
+    - boost-cpp >=1.60.0,<1.68.0
     - gdal >=2.1.0
     - sqlite
     - matplotlib
@@ -35,7 +35,7 @@ requirements:
 
   run:
     - python
-    - boost
+    - {{ pin_compatible('boost-cpp', max_pin='x.x') }}
     - {{ pin_compatible('gdal', max_pin='x.x') }}
     - sqlite
     - matplotlib

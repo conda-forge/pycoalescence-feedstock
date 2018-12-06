@@ -111,6 +111,6 @@ workflows:
       - build_linux_cxx_compilergxxpython2.7
       - build_linux_cxx_compilergxxpython3.6
       - build_linux_cxx_compilergxxpython3.7
-#      - build_linux_cxx_compilertoolchain_cxxpython2.7
-#      - build_linux_cxx_compilertoolchain_cxxpython3.6
-#      - build_linux_cxx_compilertoolchain_cxxpython3.7
+      - build_linux_cxx_compilertoolchain_cxxpython2.7
+      - build_linux_cxx_compilertoolchain_cxxpython3.6
+      - build_linux_cxx_compilertoolchain_cxxpython3.7

@@ -1,6 +1,6 @@
 {% set name = "pycoalescence" %}
-{% set version = "1.2.7a5" %}
-{% set sha256 = "691a76b5221f90695598212d9e5d4a78b30e38dceab407a09f3c377a53d66fab" %}
+  {% set version = "1.2.7a13" %}
+  {% set sha256 = "f8fccf29667541d4224919193fa33660199b63a2570a44a0522a5a6ad406b1b6" %}
 
 package:
   name: {{ name|lower }}
@@ -12,22 +12,21 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
   detect_binary_files_with_prefix: True
-  skip: True  # [(win and vc<14) or linux]
+  skip: True  # [(win and vc<14)]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - {{ compiler('c') }}
     - cmake >=3.6
 
   host:
     - python
     - pip
     - setuptools
-    - boost
+    - boost-cpp >=1.60.0,<1.68.0
     - gdal >=2.1.0
     - sqlite
     - matplotlib
@@ -35,7 +34,7 @@ requirements:
 
   run:
     - python
-    - boost
+    - {{ pin_compatible('boost-cpp', max_pin='x.x.x') }}
     - {{ pin_compatible('gdal', max_pin='x.x') }}
     - sqlite
     - matplotlib

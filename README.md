@@ -1,13 +1,15 @@
 About pycoalescence
 ===================
 
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+
 Home: https://bitbucket.org/thompsonsed/pycoalescence/
 
 Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Spatially-explicit neutral ecology simulator using coalescence methods
+Summary: Spatially explicit neutral ecology simulator using coalescence methods
 
 pycoalescence is an API for easy interfacing with the necsim c++ neutral
 simulator for ecological models under the effects of
@@ -18,9 +20,9 @@ manner.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pycoalescence-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pycoalescence-feedstock)
 [![OSX](https://img.shields.io/travis/conda-forge/pycoalescence-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pycoalescence-feedstock)
 [![Windows](https://img.shields.io/appveyor/ci/conda-forge/pycoalescence-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pycoalescence-feedstock/branch/master)
+![Linux disabled](https://img.shields.io/badge/linux-disabled-lightgrey.svg)
 
 Current release info
 ====================
@@ -108,3 +110,9 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@thompsonsed](https://github.com/thompsonsed/)
+

@@ -30,6 +30,7 @@ requirements:
     - sqlite
     - matplotlib
     - numpy >=1.11.0
+    - configparser  # [py2]
 
   run:
     - python

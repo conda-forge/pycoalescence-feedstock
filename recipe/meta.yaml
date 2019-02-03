@@ -1,6 +1,6 @@
 {% set name = "pycoalescence" %}
-{% set version = "1.2.7a22" %}
-{% set sha256 = "a3c7aa8b72c964d40524d5d9432a14fb25aab2531bcc202838a6b983f45b33db" %}
+{% set version = "1.2.7a23" %}
+{% set sha256 = "5eefb26fe13dad562eb9053512f2d54165267bdcd21e6c2236042e67f42cebd5" %}
 
 package:
   name: {{ name|lower }}
@@ -39,6 +39,7 @@ requirements:
     - matplotlib
     - numpy
     - scipy
+    - configparser  # [py2]
 
 test:
   imports:

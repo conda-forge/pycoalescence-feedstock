@@ -1,6 +1,6 @@
 {% set name = "pycoalescence" %}
-{% set version = "1.2.7a21" %}
-{% set sha256 = "1d0e4e5c1dfc894a65d30946d4d7bbd9bf26ceb4e2f34ec60cde5f6cea4c3c36" %}
+{% set version = "1.2.7a22" %}
+{% set sha256 = "a3c7aa8b72c964d40524d5d9432a14fb25aab2531bcc202838a6b983f45b33db" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ build:
   number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
   detect_binary_files_with_prefix: True
-  skip: True  # [(win and vc<14) or linux]
+  skip: True  # [(win and vc<14)]
 
 requirements:
   build:

@@ -1,6 +1,6 @@
 {% set name = "pycoalescence" %}
-{% set version = "1.2.7a20" %}
-{% set sha256 = "04a55b42f5ceadb0c7bb66cc8acda6d52053f2c34847d79674c0a07a9aa0ea92" %}
+{% set version = "1.2.7a31" %}
+{% set sha256 = "073e055380445108b46b5087f759924780cd4b765ec005ec53f6f1c91217b327" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ build:
   number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
   detect_binary_files_with_prefix: True
-  skip: True  # [(win and vc<14) or linux]
+  skip: True  # [(win and vc<14)]
 
 requirements:
   build:
@@ -30,6 +30,7 @@ requirements:
     - sqlite
     - matplotlib
     - numpy >=1.11.0
+    - configparser  # [py < 30]
 
   run:
     - python
@@ -39,6 +40,7 @@ requirements:
     - matplotlib
     - numpy
     - scipy
+    - configparser  # [py < 30]
 
 test:
   imports:

@@ -1,6 +1,6 @@
 {% set name = "pycoalescence" %}
-{% set version = "1.2.7a31" %}
-{% set sha256 = "073e055380445108b46b5087f759924780cd4b765ec005ec53f6f1c91217b327" %}
+{% set version = "1.2.7a37" %}
+{% set sha256 = "9b40a9f19f32f45d9d1c0ada7eb8dd5754eba66a6d0dcd73251ffbf4fd76d98f" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +8,13 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 build:
-  number: 0
+  number: 3
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
   detect_binary_files_with_prefix: True
-  skip: True  # [(win and vc<14)]
+  skip: True  # [win]
 
 requirements:
   build:
@@ -26,7 +26,7 @@ requirements:
     - pip
     - setuptools
     - boost-cpp >=1.60.0,<1.68.0
-    - gdal >=2.1.0
+    - gdal >=2.1.0,<2.4.1
     - sqlite
     - matplotlib
     - numpy >=1.11.0
@@ -35,7 +35,7 @@ requirements:
   run:
     - python
     - {{ pin_compatible('boost-cpp', max_pin='x.x.x') }}
-    - {{ pin_compatible('gdal', max_pin='x.x') }}
+    - {{ pin_compatible('gdal', max_pin='x.x.x') }}
     - sqlite
     - matplotlib
     - numpy

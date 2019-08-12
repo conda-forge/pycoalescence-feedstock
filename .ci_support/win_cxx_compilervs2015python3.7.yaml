@@ -12,15 +12,10 @@ pin_run_as_build:
     max_pin: x.x
   sqlite:
     max_pin: x
-  vc:
-    max_pin: x
 python:
-- '3.6'
+- '3.7'
 sqlite:
 - '3'
-vc:
-- '14'
 zip_keys:
 - - python
-  - vc
   - cxx_compiler

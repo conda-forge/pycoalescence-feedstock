@@ -1,6 +1,6 @@
 {% set name = "pycoalescence" %}
-{% set version = "1.2.7a38" %}
-{% set sha256 = "0c6cb41370d100a3b40b0cb0199d541dd06e6d9f6495aed7097e0cd6791733dd" %}
+{% set version = "1.2.7a43" %}
+{% set sha256 = "85e006666da480b7b06676a3769ceef0d810a32ef147b90ffb7647f83543eb85" %}
 
 package:
   name: {{ name|lower }}
@@ -11,10 +11,10 @@ source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
   detect_binary_files_with_prefix: True
-  skip: True  # [(win and vc<14)]
+  skip: True  # [win and vs < 14]
 
 requirements:
   build:
@@ -26,7 +26,7 @@ requirements:
     - pip
     - setuptools
     - boost-cpp >=1.60.0,<1.68.0
-    - gdal >=2.1.0,<2.4.1
+    - gdal >=2.1.0
     - sqlite
     - matplotlib
     - numpy >=1.11.0
@@ -52,7 +52,7 @@ about:
   home: https://bitbucket.org/thompsonsed/pycoalescence/
   license: MIT
   license_file: LICENSE.txt
-  summary: 'Spatially explicit neutral ecology simulator using coalescence methods'
+  summary: 'Ecological simulator for spatially explicit neutral models using coalescence methods'
   description: |
     pycoalescence is an API for easy interfacing with the necsim c++ neutral
     simulator for ecological models under the effects of

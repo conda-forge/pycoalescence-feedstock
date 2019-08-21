@@ -1,6 +1,6 @@
 {% set name = "pycoalescence" %}
-{% set version = "1.2.7a43" %}
-{% set sha256 = "85e006666da480b7b06676a3769ceef0d810a32ef147b90ffb7647f83543eb85" %}
+{% set version = "1.2.7a45" %}
+{% set sha256 = "8734a3d43f397d63642732cdc302b1cae9ec9fa7902c23412bda12c51556c29a" %}
 
 package:
   name: {{ name|lower }}
@@ -11,10 +11,10 @@ source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 build:
-  number: 1
+  number: 2
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
   detect_binary_files_with_prefix: True
-  skip: True  # [win and vs < 14]
+  skip: True  # [(win and vc < 14)]
 
 requirements:
   build:

@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 4
+  number: 5
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
   detect_binary_files_with_prefix: True
   skip: True  # [(win and vc < 14)]
@@ -29,7 +29,7 @@ requirements:
     - boost-cpp >=1.60.0
     - gdal >=2.1.0
     - sqlite
-    - matplotlib
+    - matplotlib-base
     - numpy >=1.11.0
     - configparser  # [py < 30]
 
@@ -38,7 +38,7 @@ requirements:
     - {{ pin_compatible('boost-cpp', max_pin='x.x.x') }}
     - {{ pin_compatible('gdal', max_pin='x.x.x') }}
     - sqlite
-    - matplotlib
+    - matplotlib-base
     - numpy
     - scipy
     - pandas

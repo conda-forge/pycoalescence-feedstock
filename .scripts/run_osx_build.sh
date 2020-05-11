@@ -23,7 +23,11 @@ source ${HOME}/miniforge3/etc/profile.d/conda.sh
 conda activate base
 
 echo -e "\n\nInstalling conda-forge-ci-setup=3 and conda-build."
+<<<<<<< HEAD
 conda install -n base --quiet --yes "conda-forge-ci-setup=3" conda-build pip
+=======
+conda install -n base --quiet --yes conda-forge-ci-setup=3 conda-build pip
+>>>>>>> Rerendered with conda-forge
 
 
 
@@ -47,6 +51,7 @@ set -e
 
 echo -e "\n\nMaking the build clobber file and running the build."
 make_build_number ./ ./recipe ./.ci_support/${CONFIG}.yaml
+<<<<<<< HEAD
 
 conda build ./recipe -m ./.ci_support/${CONFIG}.yaml --suppress-variables --clobber-file ./.ci_support/clobber_${CONFIG}.yaml ${EXTRA_CB_OPTIONS:-}
 validate_recipe_outputs "${FEEDSTOCK_NAME}"
@@ -54,4 +59,11 @@ validate_recipe_outputs "${FEEDSTOCK_NAME}"
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
   echo -e "\n\nUploading the packages."
   upload_package --validate --feedstock-name="${FEEDSTOCK_NAME}" ./ ./recipe ./.ci_support/${CONFIG}.yaml
+=======
+conda build ./recipe -m ./.ci_support/${CONFIG}.yaml --clobber-file ./.ci_support/clobber_${CONFIG}.yaml
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+  echo -e "\n\nUploading the packages."
+  upload_package  ./ ./recipe ./.ci_support/${CONFIG}.yaml
+>>>>>>> Rerendered with conda-forge
 fi

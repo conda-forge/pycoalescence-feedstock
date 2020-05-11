@@ -19,7 +19,12 @@ conda-build:
 
 CONDARC
 
+<<<<<<< HEAD
 conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
+=======
+conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
+
+>>>>>>> Rerendered with conda-forge
 
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
@@ -38,6 +43,7 @@ source run_conda_forge_build_setup
 make_build_number "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
 
+<<<<<<< HEAD
 if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
     if [[ "x${BUILD_OUTPUT_ID:-}" != "x" ]]; then
         EXTRA_CB_OPTIONS="${EXTRA_CB_OPTIONS:-} --output-id ${BUILD_OUTPUT_ID}"
@@ -56,6 +62,10 @@ else
     if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
         upload_package --validate --feedstock-name="${FEEDSTOCK_NAME}"  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
     fi
+=======
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+    upload_package  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+>>>>>>> Rerendered with conda-forge
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

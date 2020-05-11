@@ -19,10 +19,16 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Rerendered with conda-forge
 =======
 >>>>>>> 6b951ff (Rerendered with conda-forge)
+<<<<<<< HEAD
 >>>>>>> bef9287 (Rerendered with conda-forge)
+=======
+=======
+>>>>>>> 5bd6ac8 (Rerendered with conda-forge)
+>>>>>>> 02042b7 (Rerendered with conda-forge)
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
       linux_64_numpy1.16python3.7.____cpython:
@@ -44,9 +50,12 @@ jobs:
         UPLOAD_PACKAGES: 'True'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 99ef6e6 (Re-rendered with conda smithy)
+=======
+>>>>>>> 02042b7 (Rerendered with conda-forge)
 =======
 <<<<<<< HEAD
       linux_python3.6.____cpython:
@@ -54,6 +63,15 @@ jobs:
 =======
 >>>>>>> 6b951ff (Rerendered with conda-forge)
         UPLOAD_PACKAGES: True
+=======
+=======
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_python3.7.____cpython:
+        CONFIG: linux_python3.7.____cpython
+        UPLOAD_PACKAGES: True
+>>>>>>> Rerendered with conda-forge
+>>>>>>> 5bd6ac8 (Rerendered with conda-forge)
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
 =======
         UPLOAD_PACKAGES: True

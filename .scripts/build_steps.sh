@@ -29,6 +29,7 @@ conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forg
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 04268ed (Re-rendered with conda smithy)
 =======
@@ -66,7 +67,15 @@ conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-fo
 =======
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> 04268ed (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 99ef6e6 (Re-rendered with conda smithy)
+=======
+=======
+=======
+
+>>>>>>> Rerendered with conda-forge
+>>>>>>> 5bd6ac8 (Rerendered with conda-forge)
+>>>>>>> 02042b7 (Rerendered with conda-forge)
 
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
@@ -185,10 +194,17 @@ else
 =======
 
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+<<<<<<< HEAD
     upload_package "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> 04268ed (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 99ef6e6 (Re-rendered with conda smithy)
+=======
+=======
+    upload_package  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+>>>>>>> 5bd6ac8 (Rerendered with conda-forge)
+>>>>>>> 02042b7 (Rerendered with conda-forge)
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

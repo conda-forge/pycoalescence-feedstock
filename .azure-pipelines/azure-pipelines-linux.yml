@@ -8,6 +8,14 @@ jobs:
     vmImage: ubuntu-16.04
   strategy:
     matrix:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8aa0598 (Rerendered with conda-forge)
       linux_64_numpy1.16python3.6.____cpython:
         CONFIG: linux_64_numpy1.16python3.6.____cpython
 <<<<<<< HEAD
@@ -44,7 +52,23 @@ jobs:
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> 04268ed (Re-rendered with conda smithy)
         UPLOAD_PACKAGES: 'True'
+<<<<<<< HEAD
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+=======
+=======
+=======
+      linux_python3.6.____cpython:
+        CONFIG: linux_python3.6.____cpython
+>>>>>>> fc77e24 (Rerendered with conda-forge)
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_python3.7.____cpython:
+        CONFIG: linux_python3.7.____cpython
+<<<<<<< HEAD
+        UPLOAD_PACKAGES: True
+>>>>>>> Rerendered with conda-forge
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+>>>>>>> 8aa0598 (Rerendered with conda-forge)
       linux_64_numpy1.19python3.9.____cpython:
         CONFIG: linux_64_numpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -69,6 +93,8 @@ jobs:
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
       linux_python3.7.____cpython:
         CONFIG: linux_python3.7.____cpython
+=======
+>>>>>>> fc77e24 (Rerendered with conda-forge)
         UPLOAD_PACKAGES: True
 >>>>>>> Rerendered with conda-forge
 >>>>>>> 5bd6ac8 (Rerendered with conda-forge)

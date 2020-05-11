@@ -5,6 +5,13 @@
 jobs:
 - job: osx
   pool:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8aa0598 (Rerendered with conda-forge)
     vmImage: macOS-10.15
 <<<<<<< HEAD
 =======
@@ -26,6 +33,9 @@ jobs:
 =======
 >>>>>>> fc77e24... Rerendered with conda-forge
 >>>>>>> fa8a94f (Rerendered with conda-forge)
+=======
+    vmImage: macOS-10.14
+>>>>>>> fc77e24 (Rerendered with conda-forge)
   timeoutInMinutes: 360
 >>>>>>> Rerendered with conda-forge
 <<<<<<< HEAD
@@ -44,6 +54,12 @@ jobs:
 >>>>>>> 02042b7 (Rerendered with conda-forge)
   strategy:
     matrix:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8aa0598 (Rerendered with conda-forge)
       osx_64_numpy1.16python3.6.____cpython:
         CONFIG: osx_64_numpy1.16python3.6.____cpython
 <<<<<<< HEAD
@@ -140,6 +156,13 @@ jobs:
         UPLOAD_PACKAGES: True
       osx_python3.7.____cpython:
         CONFIG: osx_python3.7.____cpython
+=======
+      osx_python3.6.____cpython:
+        CONFIG: osx_python3.6.____cpython
+        UPLOAD_PACKAGES: True
+      osx_python3.7.____cpython:
+        CONFIG: osx_python3.7.____cpython
+>>>>>>> fc77e24 (Rerendered with conda-forge)
         UPLOAD_PACKAGES: True
 >>>>>>> Rerendered with conda-forge
 <<<<<<< HEAD
@@ -175,6 +198,15 @@ jobs:
       export CI=azure
       export OSX_FORCE_SDK_DOWNLOAD="1"
       export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Updated to 1.2.7post14
+>>>>>>> 8aa0598 (Rerendered with conda-forge)
       export FEEDSTOCK_NAME=$(basename ${BUILD_REPOSITORY_NAME})
       ./.scripts/run_osx_build.sh
     displayName: Run OSX build
@@ -230,4 +262,13 @@ jobs:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> 04268ed (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 99ef6e6 (Re-rendered with conda smithy)
+=======
+=======
+      ./.scripts/run_osx_build.sh
+    displayName: Run OSX build
+    env:
+      BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+>>>>>>> fc77e24 (Rerendered with conda-forge)
+>>>>>>> 8aa0598 (Rerendered with conda-forge)

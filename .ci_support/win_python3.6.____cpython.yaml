@@ -5,7 +5,11 @@ channel_targets:
 cxx_compiler:
 - vs2017
 numpy:
+<<<<<<< HEAD
 - '1.14'
+=======
+- '1.16'
+>>>>>>> fc77e24 (Rerendered with conda-forge)
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -16,5 +20,18 @@ python:
 - 3.6.* *_cpython
 sqlite:
 - '3'
+<<<<<<< HEAD
 vc:
 - '14'
+=======
+target_platform:
+- win-64
+vc:
+- '14'
+<<<<<<< HEAD:.ci_support/win_64_python3.6.____cpython.yaml
+zip_keys:
+- - python
+  - numpy
+=======
+>>>>>>> fc77e24 (Rerendered with conda-forge):.ci_support/win_python3.6.____cpython.yaml
+>>>>>>> fc77e24 (Rerendered with conda-forge)

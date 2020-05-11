@@ -133,6 +133,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         packageSpecs: 'python=3.6 conda-build conda "conda-forge-ci-setup=3" pip' # Optional
 =======
         packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
@@ -143,6 +144,9 @@ jobs:
 =======
         packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
 >>>>>>> 5bd6ac8 (Rerendered with conda-forge)
+=======
+        packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
+>>>>>>> fc77e24 (Rerendered with conda-forge)
         installOptions: "-c conda-forge"
         updateConda: true
       displayName: Install conda-build and activate environment

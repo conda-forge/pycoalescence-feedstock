@@ -23,7 +23,27 @@ source ${HOME}/miniforge3/etc/profile.d/conda.sh
 conda activate base
 
 echo -e "\n\nInstalling conda-forge-ci-setup=3 and conda-build."
+<<<<<<< HEAD
 conda install -n base --quiet --yes "conda-forge-ci-setup=3" conda-build pip
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+conda install -n base --quiet --yes "conda-forge-ci-setup=3" conda-build pip
+=======
+conda install -n base --quiet --yes conda-forge-ci-setup=3 conda-build pip
+>>>>>>> Rerendered with conda-forge
+=======
+conda install -n base --quiet --yes conda-forge-ci-setup=3 conda-build pip
+>>>>>>> Re-rendered with conda smithy
+=======
+conda install -n base --quiet --yes "conda-forge-ci-setup=3" conda-build pip
+>>>>>>> Updated to 1.2.7post14
+=======
+conda install -n base --quiet --yes conda-forge-ci-setup=3 conda-build pip
+>>>>>>> fc77e24 (Rerendered with conda-forge)
+>>>>>>> 8aa0598 (Rerendered with conda-forge)
 
 
 
@@ -49,6 +69,7 @@ echo -e "\n\nMaking the build clobber file and running the build."
 make_build_number ./ ./recipe ./.ci_support/${CONFIG}.yaml
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -104,10 +125,14 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 =======
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> 04268ed (Re-rendered with conda smithy)
+=======
+conda build ./recipe -m ./.ci_support/${CONFIG}.yaml --clobber-file ./.ci_support/clobber_${CONFIG}.yaml
+>>>>>>> fc77e24 (Rerendered with conda-forge)
 
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
   echo -e "\n\nUploading the packages."
   upload_package  ./ ./recipe ./.ci_support/${CONFIG}.yaml
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -143,5 +168,10 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 =======
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> 04268ed (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 99ef6e6 (Re-rendered with conda smithy)
+=======
+=======
+>>>>>>> fc77e24 (Rerendered with conda-forge)
+>>>>>>> 8aa0598 (Rerendered with conda-forge)
 fi

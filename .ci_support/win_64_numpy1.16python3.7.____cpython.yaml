@@ -20,6 +20,9 @@ target_platform:
 - win-64
 vc:
 - '14'
+<<<<<<< HEAD:.ci_support/win_64_python3.7.____cpython.yaml
 zip_keys:
 - - python
   - numpy
+=======
+>>>>>>> fc77e24 (Rerendered with conda-forge):.ci_support/win_python3.7.____cpython.yaml

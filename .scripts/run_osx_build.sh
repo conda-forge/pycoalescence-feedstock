@@ -68,6 +68,7 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 =======
 >>>>>>> Re-rendered with conda smithy
 conda build ./recipe -m ./.ci_support/${CONFIG}.yaml --clobber-file ./.ci_support/clobber_${CONFIG}.yaml
+<<<<<<< HEAD
 
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
   echo -e "\n\nUploading the packages."
@@ -76,4 +77,18 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 >>>>>>> Rerendered with conda-forge
 =======
 >>>>>>> Re-rendered with conda smithy
+=======
+<<<<<<< HEAD
+validate_recipe_outputs "pycoalescence-feedstock"
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+  echo -e "\n\nUploading the packages."
+  upload_package --validate --feedstock-name="pycoalescence-feedstock" ./ ./recipe ./.ci_support/${CONFIG}.yaml
+=======
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+  echo -e "\n\nUploading the packages."
+  upload_package  ./ ./recipe ./.ci_support/${CONFIG}.yaml
+>>>>>>> fc77e24... Rerendered with conda-forge
+>>>>>>> Rerendered with conda-forge
 fi

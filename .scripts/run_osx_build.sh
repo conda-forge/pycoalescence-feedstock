@@ -47,6 +47,11 @@ set -e
 
 echo -e "\n\nMaking the build clobber file and running the build."
 make_build_number ./ ./recipe ./.ci_support/${CONFIG}.yaml
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 conda build ./recipe -m ./.ci_support/${CONFIG}.yaml --suppress-variables --clobber-file ./.ci_support/clobber_${CONFIG}.yaml ${EXTRA_CB_OPTIONS:-}
 validate_recipe_outputs "${FEEDSTOCK_NAME}"
@@ -54,4 +59,72 @@ validate_recipe_outputs "${FEEDSTOCK_NAME}"
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
   echo -e "\n\nUploading the packages."
   upload_package --validate --feedstock-name="${FEEDSTOCK_NAME}" ./ ./recipe ./.ci_support/${CONFIG}.yaml
+=======
+=======
+>>>>>>> Re-rendered with conda smithy
+conda build ./recipe -m ./.ci_support/${CONFIG}.yaml --clobber-file ./.ci_support/clobber_${CONFIG}.yaml
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+  echo -e "\n\nUploading the packages."
+  upload_package  ./ ./recipe ./.ci_support/${CONFIG}.yaml
+<<<<<<< HEAD
+>>>>>>> Rerendered with conda-forge
+=======
+>>>>>>> Re-rendered with conda smithy
+=======
+=======
+>>>>>>> Re-rendered with conda smithy
+<<<<<<< HEAD
+=======
+>>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
+=======
+>>>>>>> fa8a94f (Rerendered with conda-forge)
+validate_recipe_outputs "pycoalescence-feedstock"
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+  echo -e "\n\nUploading the packages."
+  upload_package --validate --feedstock-name="pycoalescence-feedstock" ./ ./recipe ./.ci_support/${CONFIG}.yaml
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+=======
+=======
+>>>>>>> fa8a94f (Rerendered with conda-forge)
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+  echo -e "\n\nUploading the packages."
+  upload_package  ./ ./recipe ./.ci_support/${CONFIG}.yaml
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> fc77e24... Rerendered with conda-forge
+<<<<<<< HEAD
+>>>>>>> Rerendered with conda-forge
+=======
+=======
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+>>>>>>> Re-rendered with conda smithy
+=======
+>>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
+=======
+>>>>>>> 1ee76d8 (Rerendered with conda-forge)
+
+conda build ./recipe -m ./.ci_support/${CONFIG}.yaml --suppress-variables --clobber-file ./.ci_support/clobber_${CONFIG}.yaml ${EXTRA_CB_OPTIONS:-}
+validate_recipe_outputs "${FEEDSTOCK_NAME}"
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+  echo -e "\n\nUploading the packages."
+  upload_package --validate --feedstock-name="${FEEDSTOCK_NAME}" ./ ./recipe ./.ci_support/${CONFIG}.yaml
+<<<<<<< HEAD
+=======
+>>>>>>> Updated to 1.2.7post14
+=======
+>>>>>>> fc77e24... Rerendered with conda-forge
+>>>>>>> fa8a94f (Rerendered with conda-forge)
+>>>>>>> 1ee76d8 (Rerendered with conda-forge)
 fi

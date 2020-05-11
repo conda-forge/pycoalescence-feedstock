@@ -11,13 +11,19 @@ jobs:
 =======
     vmImage: macOS-10.14
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> Rerendered with conda-forge
 =======
 >>>>>>> 6b951ff (Rerendered with conda-forge)
+=======
+>>>>>>> fc77e24... Rerendered with conda-forge
+>>>>>>> fa8a94f (Rerendered with conda-forge)
   timeoutInMinutes: 360
 >>>>>>> Rerendered with conda-forge
 >>>>>>> bef9287 (Rerendered with conda-forge)
@@ -32,11 +38,14 @@ jobs:
         CONFIG: osx_python3.6.____cpython
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Rerendered with conda-forge
 >>>>>>> bef9287 (Rerendered with conda-forge)
         UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.16python3.7.____cpython:
         CONFIG: osx_64_numpy1.16python3.7.____cpython
+=======
+>>>>>>> fa8a94f (Rerendered with conda-forge)
         UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.16python3.8.____cpython:
         CONFIG: osx_64_numpy1.16python3.8.____cpython
@@ -84,6 +93,7 @@ jobs:
 >>>>>>> Re-rendered with conda smithy
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> Re-rendered with conda smithy
 =======
 =======
@@ -91,6 +101,9 @@ jobs:
 =======
 =======
 >>>>>>> 6b951ff (Rerendered with conda-forge)
+=======
+>>>>>>> fc77e24... Rerendered with conda-forge
+>>>>>>> fa8a94f (Rerendered with conda-forge)
         UPLOAD_PACKAGES: True
       osx_python3.7.____cpython:
         CONFIG: osx_python3.7.____cpython
@@ -119,6 +132,45 @@ jobs:
       ./.scripts/run_osx_build.sh
     displayName: Run OSX build
     env:
+<<<<<<< HEAD
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
       FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
+<<<<<<< HEAD
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
+=======
+<<<<<<< HEAD
+      ./.scripts/run_osx_build.sh
+    displayName: Run OSX build
+    env:
+      BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+>>>>>>> Rerendered with conda-forge
+=======
+      ./.scripts/run_osx_build.sh
+    displayName: Run OSX build
+    env:
+      BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+>>>>>>> Re-rendered with conda smithy
+=======
+      BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+>>>>>>> fc77e24... Rerendered with conda-forge
+<<<<<<< HEAD
+>>>>>>> Rerendered with conda-forge
+=======
+=======
+      BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+>>>>>>> Re-rendered with conda smithy
+=======
+      STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
+>>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
+=======
+      STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
+=======
+      BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+>>>>>>> fc77e24... Rerendered with conda-forge
+>>>>>>> fa8a94f (Rerendered with conda-forge)
+>>>>>>> 1ee76d8 (Rerendered with conda-forge)

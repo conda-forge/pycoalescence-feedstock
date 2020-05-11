@@ -20,6 +20,42 @@ conda-build:
 CONDARC
 
 conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
+<<<<<<< HEAD
+=======
+=======
+conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+>>>>>>> Rerendered with conda-forge
+
+>>>>>>> Rerendered with conda-forge
+=======
+conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
+>>>>>>> Re-rendered with conda smithy
+=======
+>>>>>>> fc77e24... Rerendered with conda-forge
+<<<<<<< HEAD
+>>>>>>> Rerendered with conda-forge
+=======
+=======
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+>>>>>>> Re-rendered with conda smithy
+=======
+>>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
+=======
+conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
+>>>>>>> Updated to 1.2.7post14
+=======
+=======
+
+>>>>>>> fc77e24... Rerendered with conda-forge
+>>>>>>> fa8a94f (Rerendered with conda-forge)
+>>>>>>> 1ee76d8 (Rerendered with conda-forge)
 
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"

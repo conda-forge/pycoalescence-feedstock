@@ -7,13 +7,17 @@ jobs:
   pool:
     vmImage: macOS-10.14
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> fc77e24... Rerendered with conda-forge
   timeoutInMinutes: 360
 >>>>>>> Rerendered with conda-forge
   strategy:
     matrix:
       osx_python3.6.____cpython:
         CONFIG: osx_python3.6.____cpython
+<<<<<<< HEAD
 <<<<<<< HEAD
         UPLOAD_PACKAGES: 'True'
       osx_python3.7.____cpython:
@@ -25,6 +29,8 @@ jobs:
     maxParallel: 8
   timeoutInMinutes: 360
 =======
+=======
+>>>>>>> fc77e24... Rerendered with conda-forge
         UPLOAD_PACKAGES: True
       osx_python3.7.____cpython:
         CONFIG: osx_python3.7.____cpython
@@ -40,6 +46,10 @@ jobs:
       ./.scripts/run_osx_build.sh
     displayName: Run OSX build
     env:
+<<<<<<< HEAD
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
       FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
+=======
+      BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+>>>>>>> fc77e24... Rerendered with conda-forge

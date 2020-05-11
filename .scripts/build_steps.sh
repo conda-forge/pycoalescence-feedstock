@@ -42,7 +42,7 @@ conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
 validate_recipe_outputs "pycoalescence-feedstock"
 
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
-    upload_package --validate --feedstock-name="pycoalescence-feedstock" "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+    upload_package  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

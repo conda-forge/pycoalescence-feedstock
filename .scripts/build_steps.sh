@@ -83,8 +83,12 @@ conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
     --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"
 
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+<<<<<<< HEAD
     upload_package "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 >>>>>>> Re-rendered with conda smithy
+=======
+    upload_package  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+>>>>>>> Rerendered with conda-forge
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

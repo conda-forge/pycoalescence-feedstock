@@ -9,13 +9,24 @@ jobs:
     vmImage: macOS-10.15
 =======
     vmImage: macOS-10.14
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Rerendered with conda-forge
   timeoutInMinutes: 360
 >>>>>>> Rerendered with conda-forge
   strategy:
     matrix:
 <<<<<<< HEAD
+<<<<<<< HEAD
       osx_64_numpy1.16python3.6.____cpython:
         CONFIG: osx_64_numpy1.16python3.6.____cpython
+=======
+      osx_python3.6.____cpython:
+        CONFIG: osx_python3.6.____cpython
+<<<<<<< HEAD
+>>>>>>> Rerendered with conda-forge
         UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.16python3.7.____cpython:
         CONFIG: osx_64_numpy1.16python3.7.____cpython
@@ -28,8 +39,11 @@ jobs:
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 =======
+<<<<<<< HEAD
       osx_python3.6.____cpython:
         CONFIG: osx_python3.6.____cpython
+=======
+>>>>>>> Rerendered with conda-forge
         UPLOAD_PACKAGES: True
       osx_python3.7.____cpython:
         CONFIG: osx_python3.7.____cpython

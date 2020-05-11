@@ -23,6 +23,10 @@ CONDARC
 conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
 =======
 conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
+<<<<<<< HEAD
+=======
+
+>>>>>>> Rerendered with conda-forge
 
 >>>>>>> Rerendered with conda-forge
 
@@ -65,6 +69,9 @@ else
 =======
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
     upload_package  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+<<<<<<< HEAD
+>>>>>>> Rerendered with conda-forge
+=======
 >>>>>>> Rerendered with conda-forge
 fi
 

@@ -10,6 +10,17 @@ jobs:
     matrix:
       linux_64_numpy1.16python3.6.____cpython:
         CONFIG: linux_64_numpy1.16python3.6.____cpython
+<<<<<<< HEAD
+=======
+=======
+      linux_python3.6.____cpython:
+        CONFIG: linux_python3.6.____cpython
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> Rerendered with conda-forge
+=======
+>>>>>>> 6b951ff (Rerendered with conda-forge)
+>>>>>>> bef9287 (Rerendered with conda-forge)
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
       linux_64_numpy1.16python3.7.____cpython:
@@ -23,6 +34,46 @@ jobs:
       linux_64_numpy1.19python3.9.____cpython:
         CONFIG: linux_64_numpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+      linux_python3.6.____cpython:
+        CONFIG: linux_python3.6.____cpython
+=======
+>>>>>>> 6b951ff (Rerendered with conda-forge)
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_python3.7.____cpython:
+        CONFIG: linux_python3.7.____cpython
+        UPLOAD_PACKAGES: True
+>>>>>>> Rerendered with conda-forge
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+  timeoutInMinutes: 360
+
+  steps:
+  - script: |
+         rm -rf /opt/ghc
+         df -h
+    displayName: Manage disk space
+
+=======
+      linux_python3.6.____cpython:
+        CONFIG: linux_python3.6.____cpython
+=======
+      linux_64_python3.6.____cpython:
+        CONFIG: linux_64_python3.6.____cpython
+>>>>>>> Updated to 1.2.7post14
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+      linux_64_python3.7.____cpython:
+        CONFIG: linux_64_python3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+      linux_64_python3.8.____cpython:
+        CONFIG: linux_64_python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+>>>>>>> bef9287 (Rerendered with conda-forge)
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
   timeoutInMinutes: 360
 

@@ -6,6 +6,14 @@ jobs:
 - job: win
   pool:
     vmImage: vs2017-win2016
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Re-rendered with conda smithy for windows
+>>>>>>> bef9287 (Rerendered with conda-forge)
   strategy:
     matrix:
       win_64_numpy1.16python3.6.____cpython:
@@ -25,6 +33,37 @@ jobs:
     CONDA_BLD_PATH: D:\\bld\\
 
   steps:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6b951ff (Rerendered with conda-forge)
+  timeoutInMinutes: 360
+  strategy:
+    maxParallel: 4
+    matrix:
+      win_python3.6.____cpython:
+        CONFIG: win_python3.6.____cpython
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+      win_python3.7.____cpython:
+        CONFIG: win_python3.7.____cpython
+        CONDA_BLD_PATH: D:\\bld\\
+        UPLOAD_PACKAGES: True
+  steps:
+    # TODO: Fast finish on azure pipelines?
+    - script: |
+        ECHO ON
+        
+
+<<<<<<< HEAD
+>>>>>>> Rerendered with conda-forge
+=======
+>>>>>>> Re-rendered with conda smithy for windows
+=======
+>>>>>>> 6b951ff (Rerendered with conda-forge)
+>>>>>>> bef9287 (Rerendered with conda-forge)
     - script: |
         choco install vcpython27 -fdv -y --debug
       condition: contains(variables['CONFIG'], 'vs2008')
@@ -61,7 +100,11 @@ jobs:
 
     - task: CondaEnvironment@1
       inputs:
+<<<<<<< HEAD
         packageSpecs: 'python=3.6 conda-build conda "conda-forge-ci-setup=3" pip' # Optional
+=======
+        packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
+>>>>>>> 6b951ff (Rerendered with conda-forge)
         installOptions: "-c conda-forge"
         updateConda: true
       displayName: Install conda-build and activate environment
@@ -100,6 +143,7 @@ jobs:
       env:
         PYTHONUNBUFFERED: 1
       condition: not(contains(variables['CONFIG'], 'vs2008'))
+<<<<<<< HEAD
     - script: |
         set "FEEDSTOCK_NAME=%BUILD_REPOSITORY_NAME:*/=%"
         call activate base
@@ -116,4 +160,14 @@ jobs:
         BINSTAR_TOKEN: $(BINSTAR_TOKEN)
         FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
         STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
+=======
+
+    - script: |
+        set "GIT_BRANCH=%BUILD_SOURCEBRANCHNAME%"
+        call activate base
+        upload_package  .\ ".\recipe" .ci_support\%CONFIG%.yaml
+      displayName: Upload package
+      env:
+        BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+>>>>>>> 6b951ff (Rerendered with conda-forge)
       condition: and(succeeded(), not(eq(variables['UPLOAD_PACKAGES'], 'False')))

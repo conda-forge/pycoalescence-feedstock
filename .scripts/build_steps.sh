@@ -37,6 +37,71 @@ source run_conda_forge_build_setup
 # make the build number clobber
 make_build_number "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
+    if [[ "x${BUILD_OUTPUT_ID:-}" != "x" ]]; then
+        EXTRA_CB_OPTIONS="${EXTRA_CB_OPTIONS:-} --output-id ${BUILD_OUTPUT_ID}"
+    fi
+    conda debug "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
+        ${EXTRA_CB_OPTIONS:-} \
+        --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"
+    # Drop into an interactive shell
+    /bin/bash
+else
+    conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
+        --suppress-variables ${EXTRA_CB_OPTIONS:-} \
+        --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"
+    validate_recipe_outputs "${FEEDSTOCK_NAME}"
+
+    if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+        upload_package --validate --feedstock-name="${FEEDSTOCK_NAME}"  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+    fi
+=======
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+    upload_package  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+<<<<<<< HEAD
+>>>>>>> Rerendered with conda-forge
+=======
+>>>>>>> Rerendered with conda-forge
+=======
+conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
+    --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
+validate_recipe_outputs "pycoalescence-feedstock"
+>>>>>>> Re-rendered with conda smithy
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+<<<<<<< HEAD
+<<<<<<< HEAD
+    upload_package "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+>>>>>>> Re-rendered with conda smithy
+=======
+    upload_package  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+<<<<<<< HEAD
+>>>>>>> Rerendered with conda-forge
+=======
+=======
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+<<<<<<< HEAD
+    upload_package "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+>>>>>>> Re-rendered with conda smithy
+=======
+    upload_package --validate --feedstock-name="pycoalescence-feedstock" "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+>>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
+=======
+>>>>>>> bef9287 (Rerendered with conda-forge)
 
 if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
     if [[ "x${BUILD_OUTPUT_ID:-}" != "x" ]]; then
@@ -56,6 +121,13 @@ else
     if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
         upload_package --validate --feedstock-name="${FEEDSTOCK_NAME}"  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
     fi
+<<<<<<< HEAD
+=======
+>>>>>>> Updated to 1.2.7post14
+=======
+    upload_package  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+>>>>>>> 6b951ff (Rerendered with conda-forge)
+>>>>>>> bef9287 (Rerendered with conda-forge)
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

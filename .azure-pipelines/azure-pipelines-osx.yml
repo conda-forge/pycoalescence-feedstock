@@ -6,21 +6,108 @@ jobs:
 - job: osx
   pool:
     vmImage: macOS-10.15
+<<<<<<< HEAD
+=======
+=======
+    vmImage: macOS-10.14
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Rerendered with conda-forge
+=======
+>>>>>>> 6b951ff (Rerendered with conda-forge)
+  timeoutInMinutes: 360
+>>>>>>> Rerendered with conda-forge
+>>>>>>> bef9287 (Rerendered with conda-forge)
   strategy:
     matrix:
       osx_64_numpy1.16python3.6.____cpython:
         CONFIG: osx_64_numpy1.16python3.6.____cpython
+<<<<<<< HEAD
+=======
+=======
+      osx_python3.6.____cpython:
+        CONFIG: osx_python3.6.____cpython
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> Rerendered with conda-forge
+>>>>>>> bef9287 (Rerendered with conda-forge)
         UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.16python3.7.____cpython:
         CONFIG: osx_64_numpy1.16python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.16python3.8.____cpython:
         CONFIG: osx_64_numpy1.16python3.8.____cpython
+=======
+>>>>>>> 6b951ff (Rerendered with conda-forge)
         UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.19python3.9.____cpython:
         CONFIG: osx_64_numpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+      osx_python3.6.____cpython:
+        CONFIG: osx_python3.6.____cpython
+=======
+>>>>>>> Rerendered with conda-forge
+        UPLOAD_PACKAGES: True
+      osx_python3.7.____cpython:
+        CONFIG: osx_python3.7.____cpython
+        UPLOAD_PACKAGES: True
+>>>>>>> Rerendered with conda-forge
+=======
+    vmImage: macOS-10.14
+=======
+    vmImage: macOS-10.15
+>>>>>>> Updated to 1.2.7post14
+  strategy:
+    matrix:
+      osx_64_python3.6.____cpython:
+        CONFIG: osx_64_python3.6.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.7.____cpython:
+        CONFIG: osx_64_python3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_python3.8.____cpython:
+        CONFIG: osx_64_python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+  timeoutInMinutes: 360
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> Re-rendered with conda smithy
+=======
+=======
+>>>>>>> Re-rendered with conda smithy
+=======
+=======
+>>>>>>> fc77e24... Rerendered with conda-forge
+=======
+=======
+>>>>>>> 6b951ff (Rerendered with conda-forge)
+        UPLOAD_PACKAGES: True
+      osx_python3.7.____cpython:
+        CONFIG: osx_python3.7.____cpython
+        UPLOAD_PACKAGES: True
+>>>>>>> Rerendered with conda-forge
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> Rerendered with conda-forge
+=======
+=======
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+>>>>>>> Re-rendered with conda smithy
+=======
+>>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
+=======
+>>>>>>> 6b951ff (Rerendered with conda-forge)
+>>>>>>> bef9287 (Rerendered with conda-forge)
 
   steps:
   # TODO: Fast finish on azure pipelines?

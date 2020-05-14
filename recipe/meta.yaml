@@ -29,7 +29,7 @@ requirements:
     - boost-cpp >=1.60.0
     - gdal >=2.1.0
     - sqlite
-    - matplotlib-base
+    - matplotlib
     - numpy >=1.11.0
     - configparser  # [py < 30]
 
@@ -38,7 +38,7 @@ requirements:
     - {{ pin_compatible('boost-cpp', max_pin='x.x.x') }}
     - {{ pin_compatible('gdal', max_pin='x.x.x') }}
     - sqlite
-    - matplotlib-base
+    - matplotlib
     - numpy
     - scipy
     - pandas

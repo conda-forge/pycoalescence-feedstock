@@ -80,6 +80,7 @@ docker run ${DOCKER_RUN_ARGS} \
            -e UPLOAD_ON_BRANCH \
            -e CI \
 <<<<<<< HEAD
+<<<<<<< HEAD
            -e FEEDSTOCK_NAME \
            -e CPU_COUNT \
            -e BUILD_WITH_CONDA_DEBUG \
@@ -88,6 +89,12 @@ docker run ${DOCKER_RUN_ARGS} \
            -e FEEDSTOCK_TOKEN \
            -e STAGING_BINSTAR_TOKEN \
 =======
+>>>>>>> Re-rendered with conda smithy
+=======
+           -e FEEDSTOCK_TOKEN \
+           -e STAGING_BINSTAR_TOKEN \
+=======
+>>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> Re-rendered with conda smithy
            $DOCKER_IMAGE \
            bash \

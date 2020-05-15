@@ -117,11 +117,14 @@ Current build status
             </tr><tr>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
               <td>osx_python3.6.____cpython</td>
 =======
 =======
 >>>>>>> Rerendered with conda-forge
 <<<<<<< HEAD
+=======
+>>>>>>> Re-rendered with conda smithy
               <td>linux_python3.8.____cpython</td>
 >>>>>>> Rerendered with conda-forge
               <td>
@@ -174,6 +177,7 @@ Current build status
 =======
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=osx&configuration=osx_python3.8.____cpython" alt="variant">
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Re-rendered with conda smithy
                 </a>
               </td>
@@ -197,6 +201,8 @@ Current build status
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=win&configuration=win_python3.8.____cpython" alt="variant">
 =======
+=======
+>>>>>>> Re-rendered with conda smithy
 =======
               <td>osx_python3.6.____cpython</td>
               <td>
@@ -254,7 +260,12 @@ Current build status
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=win&configuration=win_python3.7.____cpython" alt="variant">
 >>>>>>> fc77e24... Rerendered with conda-forge
+<<<<<<< HEAD
 >>>>>>> Rerendered with conda-forge
+=======
+=======
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+>>>>>>> Re-rendered with conda smithy
                 </a>
               </td>
             </tr>

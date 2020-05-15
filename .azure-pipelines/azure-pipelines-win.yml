@@ -7,6 +7,9 @@ jobs:
   pool:
     vmImage: vs2017-win2016
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Re-rendered with conda smithy for windows
   strategy:
     matrix:
       win_python3.6.____cpython:
@@ -24,6 +27,7 @@ jobs:
     CONDA_BLD_PATH: D:\\bld\\
 
   steps:
+<<<<<<< HEAD
 =======
   timeoutInMinutes: 360
   strategy:
@@ -44,6 +48,8 @@ jobs:
         
 
 >>>>>>> Rerendered with conda-forge
+=======
+>>>>>>> Re-rendered with conda smithy for windows
     - script: |
         choco install vcpython27 -fdv -y --debug
       condition: contains(variables['CONFIG'], 'vs2008')

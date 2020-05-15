@@ -1,6 +1,26 @@
 {% set name = "pycoalescence" %}
+<<<<<<< HEAD
 {% set version = "1.2.7.post14" %}
 {% set sha256 = "02a0e5060a5e21c906304be4a64566e341171c4aa5f1c00d315ed42baaf8a1a4" %}
+=======
+{% set version = "1.2.7.post13" %}
+<<<<<<< HEAD
+{% set sha256 = "02a0e5060a5e21c906304be4a64566e341171c4aa5f1c00d315ed42baaf8a1a4" %}
+<<<<<<< HEAD
+=======
+{% set version = "1.2.7.post12" %}
+{% set sha256 = "462831c768753f8963f5adc5250acb145046c6192e7a5131938a17db125a5f6e" %}
+>>>>>>> Updated meta.yaml with new pycoalescence version
+=======
+{% set version = "1.2.7.post12" %}
+{% set sha256 = "462831c768753f8963f5adc5250acb145046c6192e7a5131938a17db125a5f6e" %}
+>>>>>>> e8a696b... Updated meta.yaml with new pycoalescence version
+=======
+>>>>>>> 5b1280d... Fixed merge conflict
+=======
+{% set sha256 = "317f6e8c019d9277dc9333fb46b8f2ab4d4eba3ca1f08c77d3428c6dc970c57d" %}
+>>>>>>> 0140081... Testing for bitbucket instead of pypi
+>>>>>>> Testing for bitbucket instead of pypi
 
 package:
   name: {{ name|lower }}

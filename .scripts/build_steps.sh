@@ -21,9 +21,12 @@ CONDARC
 
 conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> fc77e24... Rerendered with conda-forge
+=======
+>>>>>>> 9f152c5... Re-rendered with conda smithy
 
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
@@ -43,10 +46,16 @@ make_build_number "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
 conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
     --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"
+<<<<<<< HEAD
 validate_recipe_outputs "pycoalescence-feedstock"
 
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
     upload_package  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+=======
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+    upload_package "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+>>>>>>> 9f152c5... Re-rendered with conda smithy
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

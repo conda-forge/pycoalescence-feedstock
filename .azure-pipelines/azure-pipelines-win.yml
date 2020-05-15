@@ -13,6 +13,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Re-rendered with conda smithy for windows
 >>>>>>> bef9287 (Rerendered with conda-forge)
@@ -31,6 +32,8 @@ jobs:
         CONFIG: win_64_numpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
 =======
+=======
+>>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
   strategy:
     matrix:
       win_python3.6.____cpython:
@@ -43,12 +46,16 @@ jobs:
         CONFIG: win_python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
     maxParallel: 4
+<<<<<<< HEAD
 >>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
+=======
+>>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
   timeoutInMinutes: 360
   variables:
     CONDA_BLD_PATH: D:\\bld\\
 
   steps:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -93,7 +100,12 @@ jobs:
 =======
 =======
 >>>>>>> 5bd6ac8 (Rerendered with conda-forge)
+<<<<<<< HEAD
 >>>>>>> 02042b7 (Rerendered with conda-forge)
+=======
+=======
+>>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
+>>>>>>> 2e59837 (Re-rendered with conda smithy for windows)
     - script: |
         choco install vcpython27 -fdv -y --debug
       condition: contains(variables['CONFIG'], 'vs2008')
@@ -134,6 +146,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         packageSpecs: 'python=3.6 conda-build conda "conda-forge-ci-setup=3" pip' # Optional
 =======
         packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
@@ -147,6 +160,9 @@ jobs:
 =======
         packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
 >>>>>>> fc77e24 (Rerendered with conda-forge)
+=======
+        packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
+>>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
         installOptions: "-c conda-forge"
         updateConda: true
       displayName: Install conda-build and activate environment
@@ -188,6 +204,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - script: |
         set "FEEDSTOCK_NAME=%BUILD_REPOSITORY_NAME:*/=%"
         call activate base
@@ -209,6 +226,8 @@ jobs:
 >>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
 =======
 >>>>>>> 5bd6ac8 (Rerendered with conda-forge)
+=======
+>>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
 
     - script: |
         set "GIT_BRANCH=%BUILD_SOURCEBRANCHNAME%"
@@ -219,9 +238,12 @@ jobs:
         BINSTAR_TOKEN: $(BINSTAR_TOKEN)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6b951ff (Rerendered with conda-forge)
 =======
 >>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
 =======
 >>>>>>> 5bd6ac8 (Rerendered with conda-forge)
+=======
+>>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
       condition: and(succeeded(), not(eq(variables['UPLOAD_PACKAGES'], 'False')))

@@ -11,6 +11,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Re-rendered with conda smithy for windows
 >>>>>>> bef9287 (Rerendered with conda-forge)
@@ -28,11 +29,26 @@ jobs:
       win_64_numpy1.19python3.9.____cpython:
         CONFIG: win_64_numpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
+=======
+  strategy:
+    matrix:
+      win_python3.6.____cpython:
+        CONFIG: win_python3.6.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_python3.7.____cpython:
+        CONFIG: win_python3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+      win_python3.8.____cpython:
+        CONFIG: win_python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+    maxParallel: 4
+>>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
   timeoutInMinutes: 360
   variables:
     CONDA_BLD_PATH: D:\\bld\\
 
   steps:
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -63,7 +79,12 @@ jobs:
 >>>>>>> Re-rendered with conda smithy for windows
 =======
 >>>>>>> 6b951ff (Rerendered with conda-forge)
+<<<<<<< HEAD
 >>>>>>> bef9287 (Rerendered with conda-forge)
+=======
+=======
+>>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
+>>>>>>> d74d53f (Re-rendered with conda smithy for windows)
     - script: |
         choco install vcpython27 -fdv -y --debug
       condition: contains(variables['CONFIG'], 'vs2008')
@@ -101,10 +122,14 @@ jobs:
     - task: CondaEnvironment@1
       inputs:
 <<<<<<< HEAD
+<<<<<<< HEAD
         packageSpecs: 'python=3.6 conda-build conda "conda-forge-ci-setup=3" pip' # Optional
 =======
         packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
 >>>>>>> 6b951ff (Rerendered with conda-forge)
+=======
+        packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
+>>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
         installOptions: "-c conda-forge"
         updateConda: true
       displayName: Install conda-build and activate environment
@@ -144,6 +169,7 @@ jobs:
         PYTHONUNBUFFERED: 1
       condition: not(contains(variables['CONFIG'], 'vs2008'))
 <<<<<<< HEAD
+<<<<<<< HEAD
     - script: |
         set "FEEDSTOCK_NAME=%BUILD_REPOSITORY_NAME:*/=%"
         call activate base
@@ -161,6 +187,8 @@ jobs:
         FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
         STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
 =======
+=======
+>>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
 
     - script: |
         set "GIT_BRANCH=%BUILD_SOURCEBRANCHNAME%"
@@ -169,5 +197,8 @@ jobs:
       displayName: Upload package
       env:
         BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+<<<<<<< HEAD
 >>>>>>> 6b951ff (Rerendered with conda-forge)
+=======
+>>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
       condition: and(succeeded(), not(eq(variables['UPLOAD_PACKAGES'], 'False')))

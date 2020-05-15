@@ -367,12 +367,54 @@ Current build status
 >>>>>>> 99ef6e6 (Re-rendered with conda smithy)
                 </a>
               </td>
+            </tr><tr>
+              <td>win_python3.6.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=win&configuration=win_python3.6.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_python3.7.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=win&configuration=win_python3.7.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_python3.8.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=win&configuration=win_python3.8.____cpython" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
       </details>
     </td>
   </tr>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> Re-rendered with conda smithy for windows
+=======
+>>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
+  <tr>
+    <td>Linux_ppc64le</td>
+    <td>
+      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
+    </td>
+  </tr>
+>>>>>>> Re-rendered with conda smithy for windows
+=======
+>>>>>>> Updated to 1.2.7post14
+>>>>>>> d74d53f (Re-rendered with conda smithy for windows)
 </table>
 
 Current release info

@@ -4,5 +4,10 @@
 
 jobs:
   - template: ./.azure-pipelines/azure-pipelines-linux.yml
+<<<<<<< HEAD
   - template: ./.azure-pipelines/azure-pipelines-win.yml
   - template: ./.azure-pipelines/azure-pipelines-osx.yml
+=======
+  - template: ./.azure-pipelines/azure-pipelines-osx.yml
+  - template: ./.azure-pipelines/azure-pipelines-win.yml
+>>>>>>> c0633e0 (Re-rendered with conda smithy for windows)

@@ -168,12 +168,42 @@ Current build status
 >>>>>>> Re-rendered with conda smithy
                 </a>
               </td>
+            </tr><tr>
+              <td>win_python3.6.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=win&configuration=win_python3.6.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_python3.7.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=win&configuration=win_python3.7.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_python3.8.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=win&configuration=win_python3.8.____cpython" alt="variant">
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>
       </details>
     </td>
   </tr>
+<<<<<<< HEAD
+=======
+  <tr>
+    <td>Linux_ppc64le</td>
+    <td>
+      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
+    </td>
+  </tr>
+>>>>>>> Re-rendered with conda smithy for windows
 </table>
 
 Current release info

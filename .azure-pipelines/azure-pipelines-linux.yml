@@ -15,7 +15,11 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8aa0598 (Rerendered with conda-forge)
+=======
+<<<<<<< HEAD
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
       linux_64_numpy1.16python3.6.____cpython:
         CONFIG: linux_64_numpy1.16python3.6.____cpython
 <<<<<<< HEAD
@@ -144,6 +148,28 @@ jobs:
          df -h
     displayName: Manage disk space
 
+<<<<<<< HEAD
+=======
+>>>>>>> Updated to 1.2.7post14
+=======
+      linux_python3.6.____cpython:
+        CONFIG: linux_python3.6.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_python3.7.____cpython:
+        CONFIG: linux_python3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_python3.8.____cpython:
+        CONFIG: linux_python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+    maxParallel: 8
+  timeoutInMinutes: 360
+
+  steps:
+>>>>>>> 9f152c5 (Re-rendered with conda smithy)
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
   # configure qemu binfmt-misc running.  This allows us to run docker containers
   # embedded qemu-static
   - script: |
@@ -155,6 +181,14 @@ jobs:
   - script: |
         export CI=azure
         export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Updated to 1.2.7post14
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
         export FEEDSTOCK_NAME=$(basename ${BUILD_REPOSITORY_NAME})
         .scripts/run_docker_build.sh
     displayName: Run docker build
@@ -188,4 +222,13 @@ jobs:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> 04268ed (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 99ef6e6 (Re-rendered with conda smithy)
+=======
+=======
+        .scripts/run_docker_build.sh
+    displayName: Run docker build
+    env:
+      BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+>>>>>>> 9f152c5 (Re-rendered with conda smithy)
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)

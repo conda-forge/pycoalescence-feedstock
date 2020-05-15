@@ -11,7 +11,11 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8aa0598 (Rerendered with conda-forge)
+=======
+<<<<<<< HEAD
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
     vmImage: macOS-10.15
 <<<<<<< HEAD
 =======
@@ -190,7 +194,26 @@ jobs:
 =======
 =======
 >>>>>>> 5bd6ac8 (Rerendered with conda-forge)
+<<<<<<< HEAD
 >>>>>>> 02042b7 (Rerendered with conda-forge)
+=======
+=======
+    vmImage: macOS-10.14
+  strategy:
+    matrix:
+      osx_python3.6.____cpython:
+        CONFIG: osx_python3.6.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_python3.7.____cpython:
+        CONFIG: osx_python3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_python3.8.____cpython:
+        CONFIG: osx_python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+    maxParallel: 8
+  timeoutInMinutes: 360
+>>>>>>> 9f152c5 (Re-rendered with conda smithy)
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
 
   steps:
   # TODO: Fast finish on azure pipelines?
@@ -200,6 +223,7 @@ jobs:
       export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -271,4 +295,13 @@ jobs:
     env:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
 >>>>>>> fc77e24 (Rerendered with conda-forge)
+<<<<<<< HEAD
 >>>>>>> 8aa0598 (Rerendered with conda-forge)
+=======
+=======
+      ./.scripts/run_osx_build.sh
+    displayName: Run OSX build
+    env:
+      BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+>>>>>>> 9f152c5 (Re-rendered with conda smithy)
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)

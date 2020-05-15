@@ -13,10 +13,28 @@ PROVIDER_DIR="$(basename $THISDIR)"
 FEEDSTOCK_ROOT=$(cd "$(dirname "$0")/.."; pwd;)
 RECIPE_ROOT="${FEEDSTOCK_ROOT}/recipe"
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Updated to 1.2.7post14
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
 if [ -z ${FEEDSTOCK_NAME} ]; then
     export FEEDSTOCK_NAME=$(basename ${FEEDSTOCK_ROOT})
 fi
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Re-rendered with conda smithy
+=======
+>>>>>>> Updated to 1.2.7post14
+=======
+>>>>>>> 9f152c5 (Re-rendered with conda smithy)
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
 docker info
 
 # In order for the conda-build process in the container to write to the mounted
@@ -45,12 +63,17 @@ fi
 if [ -z "${DOCKER_IMAGE}" ]; then
     SHYAML_INSTALLED="$(shyaml -h || echo NO)"
     if [ "${SHYAML_INSTALLED}" == "NO" ]; then
+<<<<<<< HEAD
         echo "WARNING: DOCKER_IMAGE variable not set and shyaml not installed. Trying to parse with coreutils"
         DOCKER_IMAGE=$(cat .ci_support/${CONFIG}.yaml | grep '^docker_image:$' -A 1 | tail -n 1 | cut -b 3-)
         if [ "${DOCKER_IMAGE}" = "" ]; then
             echo "No docker_image entry found in ${CONFIG}. Falling back to condaforge/linux-anvil-comp7"
             DOCKER_IMAGE="condaforge/linux-anvil-comp7"
         fi
+=======
+        echo "WARNING: DOCKER_IMAGE variable not set and shyaml not installed. Falling back to condaforge/linux-anvil-comp7"
+        DOCKER_IMAGE="condaforge/linux-anvil-comp7"
+>>>>>>> 9f152c5 (Re-rendered with conda smithy)
     else
         DOCKER_IMAGE="$(cat "${FEEDSTOCK_ROOT}/.ci_support/${CONFIG}.yaml" | shyaml get-value docker_image.0 condaforge/linux-anvil-comp7 )"
     fi
@@ -68,9 +91,26 @@ fi
 
 export UPLOAD_PACKAGES="${UPLOAD_PACKAGES:-True}"
 docker run ${DOCKER_RUN_ARGS} \
+<<<<<<< HEAD
            -v "${RECIPE_ROOT}":/home/conda/recipe_root:rw,z,delegated \
            -v "${FEEDSTOCK_ROOT}":/home/conda/feedstock_root:rw,z,delegated \
            -e CONFIG \
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+           -e BINSTAR_TOKEN \
+>>>>>>> Re-rendered with conda smithy
+=======
+>>>>>>> Updated to 1.2.7post14
+=======
+           -v "${RECIPE_ROOT}":/home/conda/recipe_root:rw,z \
+           -v "${FEEDSTOCK_ROOT}":/home/conda/feedstock_root:rw,z \
+           -e CONFIG \
+           -e BINSTAR_TOKEN \
+>>>>>>> 9f152c5 (Re-rendered with conda smithy)
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
            -e HOST_USER_ID \
            -e UPLOAD_PACKAGES \
            -e GIT_BRANCH \
@@ -78,6 +118,7 @@ docker run ${DOCKER_RUN_ARGS} \
            -e CI \
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -102,7 +143,12 @@ docker run ${DOCKER_RUN_ARGS} \
 =======
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> 04268ed (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 99ef6e6 (Re-rendered with conda smithy)
+=======
+=======
+>>>>>>> 9f152c5 (Re-rendered with conda smithy)
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
            $DOCKER_IMAGE \
            bash \
            /home/conda/feedstock_root/${PROVIDER_DIR}/build_steps.sh

@@ -25,7 +25,11 @@ CONDARC
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8aa0598 (Rerendered with conda-forge)
+=======
+<<<<<<< HEAD
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
 conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
 <<<<<<< HEAD
 =======
@@ -89,7 +93,13 @@ conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-fo
 conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
 
 >>>>>>> fc77e24 (Rerendered with conda-forge)
+<<<<<<< HEAD
 >>>>>>> 8aa0598 (Rerendered with conda-forge)
+=======
+=======
+conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
+>>>>>>> 9f152c5 (Re-rendered with conda smithy)
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
 
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
@@ -109,6 +119,7 @@ make_build_number "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -225,7 +236,17 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 =======
     upload_package  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 >>>>>>> fc77e24 (Rerendered with conda-forge)
+<<<<<<< HEAD
 >>>>>>> 8aa0598 (Rerendered with conda-forge)
+=======
+=======
+conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
+    --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+    upload_package "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+>>>>>>> 9f152c5 (Re-rendered with conda smithy)
+>>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

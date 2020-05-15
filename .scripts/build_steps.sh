@@ -28,6 +28,9 @@ conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forg
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 04268ed (Re-rendered with conda smithy)
 =======
 
 <<<<<<< HEAD
@@ -39,6 +42,7 @@ conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forg
 >>>>>>> Re-rendered with conda smithy
 =======
 >>>>>>> fc77e24... Rerendered with conda-forge
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> Rerendered with conda-forge
 =======
@@ -55,7 +59,14 @@ conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-fo
 
 >>>>>>> fc77e24... Rerendered with conda-forge
 >>>>>>> fa8a94f (Rerendered with conda-forge)
+<<<<<<< HEAD
 >>>>>>> 1ee76d8 (Rerendered with conda-forge)
+=======
+=======
+=======
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+>>>>>>> 04268ed (Re-rendered with conda smithy)
+>>>>>>> 99ef6e6 (Re-rendered with conda smithy)
 
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
@@ -109,10 +120,13 @@ conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
     --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
+=======
+>>>>>>> 04268ed (Re-rendered with conda smithy)
 validate_recipe_outputs "pycoalescence-feedstock"
 >>>>>>> Re-rendered with conda smithy
 
@@ -162,8 +176,19 @@ else
 >>>>>>> Updated to 1.2.7post14
 =======
     upload_package  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+<<<<<<< HEAD
 >>>>>>> 6b951ff (Rerendered with conda-forge)
+<<<<<<< HEAD
 >>>>>>> bef9287 (Rerendered with conda-forge)
+=======
+=======
+=======
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+    upload_package "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+>>>>>>> 04268ed (Re-rendered with conda smithy)
+>>>>>>> 99ef6e6 (Re-rendered with conda smithy)
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

@@ -76,6 +76,16 @@ docker run ${DOCKER_RUN_ARGS} \
            -e GIT_BRANCH \
            -e UPLOAD_ON_BRANCH \
            -e CI \
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Updated to 1.2.7post14
+>>>>>>> 99ef6e6 (Re-rendered with conda smithy)
            -e FEEDSTOCK_NAME \
            -e CPU_COUNT \
            -e BUILD_WITH_CONDA_DEBUG \
@@ -83,6 +93,16 @@ docker run ${DOCKER_RUN_ARGS} \
            -e BINSTAR_TOKEN \
            -e FEEDSTOCK_TOKEN \
            -e STAGING_BINSTAR_TOKEN \
+<<<<<<< HEAD
+=======
+>>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
+=======
+           -e FEEDSTOCK_TOKEN \
+           -e STAGING_BINSTAR_TOKEN \
+=======
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+>>>>>>> 04268ed (Re-rendered with conda smithy)
+>>>>>>> 99ef6e6 (Re-rendered with conda smithy)
            $DOCKER_IMAGE \
            bash \
            /home/conda/feedstock_root/${PROVIDER_DIR}/build_steps.sh

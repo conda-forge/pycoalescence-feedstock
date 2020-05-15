@@ -12,6 +12,7 @@ jobs:
     vmImage: macOS-10.14
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -26,7 +27,12 @@ jobs:
 >>>>>>> fa8a94f (Rerendered with conda-forge)
   timeoutInMinutes: 360
 >>>>>>> Rerendered with conda-forge
+<<<<<<< HEAD
 >>>>>>> bef9287 (Rerendered with conda-forge)
+=======
+=======
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+>>>>>>> 99ef6e6 (Re-rendered with conda smithy)
   strategy:
     matrix:
       osx_64_numpy1.16python3.6.____cpython:
@@ -39,8 +45,16 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Rerendered with conda-forge
+<<<<<<< HEAD
 >>>>>>> bef9287 (Rerendered with conda-forge)
+=======
+=======
+=======
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+>>>>>>> 04268ed (Re-rendered with conda smithy)
+>>>>>>> 99ef6e6 (Re-rendered with conda smithy)
         UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.16python3.7.____cpython:
         CONFIG: osx_64_numpy1.16python3.7.____cpython
@@ -90,7 +104,10 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Re-rendered with conda smithy
+=======
+>>>>>>> 04268ed (Re-rendered with conda smithy)
 =======
 =======
 <<<<<<< HEAD
@@ -111,6 +128,7 @@ jobs:
 >>>>>>> Rerendered with conda-forge
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Rerendered with conda-forge
 =======
 =======
@@ -120,7 +138,14 @@ jobs:
 >>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
 =======
 >>>>>>> 6b951ff (Rerendered with conda-forge)
+<<<<<<< HEAD
 >>>>>>> bef9287 (Rerendered with conda-forge)
+=======
+=======
+=======
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+>>>>>>> 04268ed (Re-rendered with conda smithy)
+>>>>>>> 99ef6e6 (Re-rendered with conda smithy)
 
   steps:
   # TODO: Fast finish on azure pipelines?
@@ -132,6 +157,7 @@ jobs:
       ./.scripts/run_osx_build.sh
     displayName: Run OSX build
     env:
+<<<<<<< HEAD
 <<<<<<< HEAD
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
       FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
@@ -172,5 +198,14 @@ jobs:
 =======
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
 >>>>>>> fc77e24... Rerendered with conda-forge
+<<<<<<< HEAD
 >>>>>>> fa8a94f (Rerendered with conda-forge)
+<<<<<<< HEAD
 >>>>>>> 1ee76d8 (Rerendered with conda-forge)
+=======
+=======
+=======
+      BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+>>>>>>> 9f152c5... Re-rendered with conda smithy
+>>>>>>> 04268ed (Re-rendered with conda smithy)
+>>>>>>> 99ef6e6 (Re-rendered with conda smithy)

@@ -20,6 +20,7 @@ conda-build:
 CONDARC
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
 =======
 conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
@@ -29,6 +30,9 @@ conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forg
 >>>>>>> Rerendered with conda-forge
 
 >>>>>>> Rerendered with conda-forge
+=======
+conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
+>>>>>>> Re-rendered with conda smithy
 
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
@@ -46,6 +50,7 @@ source run_conda_forge_build_setup
 # make the build number clobber
 make_build_number "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
@@ -73,6 +78,13 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 >>>>>>> Rerendered with conda-forge
 =======
 >>>>>>> Rerendered with conda-forge
+=======
+conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
+    --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+    upload_package "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+>>>>>>> Re-rendered with conda smithy
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

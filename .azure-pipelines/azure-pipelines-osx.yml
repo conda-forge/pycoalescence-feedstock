@@ -6,6 +6,7 @@ jobs:
 - job: osx
   pool:
 <<<<<<< HEAD
+<<<<<<< HEAD
     vmImage: macOS-10.15
 =======
     vmImage: macOS-10.14
@@ -49,6 +50,22 @@ jobs:
         CONFIG: osx_python3.7.____cpython
         UPLOAD_PACKAGES: True
 >>>>>>> Rerendered with conda-forge
+=======
+    vmImage: macOS-10.14
+  strategy:
+    matrix:
+      osx_python3.6.____cpython:
+        CONFIG: osx_python3.6.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_python3.7.____cpython:
+        CONFIG: osx_python3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_python3.8.____cpython:
+        CONFIG: osx_python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+    maxParallel: 8
+  timeoutInMinutes: 360
+>>>>>>> Re-rendered with conda smithy
 
   steps:
   # TODO: Fast finish on azure pipelines?
@@ -56,6 +73,7 @@ jobs:
       export CI=azure
       export OSX_FORCE_SDK_DOWNLOAD="1"
       export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
+<<<<<<< HEAD
 <<<<<<< HEAD
       export FEEDSTOCK_NAME=$(basename ${BUILD_REPOSITORY_NAME})
       ./.scripts/run_osx_build.sh
@@ -70,3 +88,9 @@ jobs:
     env:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
 >>>>>>> Rerendered with conda-forge
+=======
+      ./.scripts/run_osx_build.sh
+    displayName: Run OSX build
+    env:
+      BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+>>>>>>> Re-rendered with conda smithy

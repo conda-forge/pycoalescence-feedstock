@@ -24,10 +24,14 @@ conda activate base
 
 echo -e "\n\nInstalling conda-forge-ci-setup=3 and conda-build."
 <<<<<<< HEAD
+<<<<<<< HEAD
 conda install -n base --quiet --yes "conda-forge-ci-setup=3" conda-build pip
 =======
 conda install -n base --quiet --yes conda-forge-ci-setup=3 conda-build pip
 >>>>>>> Rerendered with conda-forge
+=======
+conda install -n base --quiet --yes conda-forge-ci-setup=3 conda-build pip
+>>>>>>> Re-rendered with conda smithy
 
 
 
@@ -52,6 +56,7 @@ set -e
 echo -e "\n\nMaking the build clobber file and running the build."
 make_build_number ./ ./recipe ./.ci_support/${CONFIG}.yaml
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 conda build ./recipe -m ./.ci_support/${CONFIG}.yaml --suppress-variables --clobber-file ./.ci_support/clobber_${CONFIG}.yaml ${EXTRA_CB_OPTIONS:-}
 validate_recipe_outputs "${FEEDSTOCK_NAME}"
@@ -60,10 +65,15 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
   echo -e "\n\nUploading the packages."
   upload_package --validate --feedstock-name="${FEEDSTOCK_NAME}" ./ ./recipe ./.ci_support/${CONFIG}.yaml
 =======
+=======
+>>>>>>> Re-rendered with conda smithy
 conda build ./recipe -m ./.ci_support/${CONFIG}.yaml --clobber-file ./.ci_support/clobber_${CONFIG}.yaml
 
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
   echo -e "\n\nUploading the packages."
   upload_package  ./ ./recipe ./.ci_support/${CONFIG}.yaml
+<<<<<<< HEAD
 >>>>>>> Rerendered with conda-forge
+=======
+>>>>>>> Re-rendered with conda smithy
 fi

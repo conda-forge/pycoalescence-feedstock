@@ -1,5 +1,6 @@
 {% set name = "pycoalescence" %}
 {% set version = "1.2.7.post13" %}
+<<<<<<< HEAD
 {% set sha256 = "02a0e5060a5e21c906304be4a64566e341171c4aa5f1c00d315ed42baaf8a1a4" %}
 <<<<<<< HEAD
 =======
@@ -12,6 +13,9 @@
 >>>>>>> e8a696b... Updated meta.yaml with new pycoalescence version
 =======
 >>>>>>> 5b1280d... Fixed merge conflict
+=======
+{% set sha256 = "317f6e8c019d9277dc9333fb46b8f2ab4d4eba3ca1f08c77d3428c6dc970c57d" %}
+>>>>>>> 0140081... Testing for bitbucket instead of pypi
 
 package:
   name: {{ name|lower }}
@@ -19,7 +23,8 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+#  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://bitbucket.org/thompsonsed/pycoalescence/get/develop.tar.gz
   sha256: {{ sha256 }}
 
 build:

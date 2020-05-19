@@ -201,6 +201,7 @@ Current build status
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Re-rendered with conda smithy
                 </a>
               </td>
@@ -449,6 +450,8 @@ Current build status
 >>>>>>> fc77e24 (Rerendered with conda-forge)
 =======
 >>>>>>> 9f152c5 (Re-rendered with conda smithy)
+=======
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
                 </a>
               </td>
             </tr><tr>

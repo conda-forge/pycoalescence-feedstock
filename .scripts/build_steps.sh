@@ -41,6 +41,7 @@ conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forg
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 04268ed (Re-rendered with conda smithy)
 =======
@@ -99,7 +100,12 @@ conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forg
 =======
 conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
 >>>>>>> 9f152c5 (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
+=======
+=======
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+>>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
 
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
@@ -155,12 +161,15 @@ conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
 =======
 >>>>>>> 04268ed (Re-rendered with conda smithy)
+=======
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
 validate_recipe_outputs "pycoalescence-feedstock"
 >>>>>>> Re-rendered with conda smithy
 
@@ -177,6 +186,7 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 =======
 
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+<<<<<<< HEAD
 <<<<<<< HEAD
     upload_package "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 >>>>>>> 9f152c5... Re-rendered with conda smithy
@@ -246,7 +256,13 @@ conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
     upload_package "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 >>>>>>> 9f152c5 (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
+=======
+=======
+    upload_package --validate --feedstock-name="pycoalescence-feedstock" "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+>>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

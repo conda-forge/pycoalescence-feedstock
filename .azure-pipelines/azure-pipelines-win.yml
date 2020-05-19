@@ -205,6 +205,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - script: |
         set "FEEDSTOCK_NAME=%BUILD_REPOSITORY_NAME:*/=%"
         call activate base
@@ -228,14 +229,21 @@ jobs:
 >>>>>>> 5bd6ac8 (Rerendered with conda-forge)
 =======
 >>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
+=======
+    - script: |
+        call activate base
+        validate_recipe_outputs "pycoalescence-feedstock"
+      displayName: Validate Recipe Outputs
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
 
     - script: |
         set "GIT_BRANCH=%BUILD_SOURCEBRANCHNAME%"
         call activate base
-        upload_package  .\ ".\recipe" .ci_support\%CONFIG%.yaml
+        upload_package --validate --feedstock-name="pycoalescence-feedstock" .\ ".\recipe" .ci_support\%CONFIG%.yaml
       displayName: Upload package
       env:
         BINSTAR_TOKEN: $(BINSTAR_TOKEN)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -246,4 +254,8 @@ jobs:
 >>>>>>> 5bd6ac8 (Rerendered with conda-forge)
 =======
 >>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
+=======
+        FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
+        STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
       condition: and(succeeded(), not(eq(variables['UPLOAD_PACKAGES'], 'False')))

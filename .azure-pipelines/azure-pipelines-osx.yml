@@ -25,6 +25,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -55,7 +56,12 @@ jobs:
   timeoutInMinutes: 360
 >>>>>>> Rerendered with conda-forge
 >>>>>>> 5bd6ac8 (Rerendered with conda-forge)
+<<<<<<< HEAD
 >>>>>>> 02042b7 (Rerendered with conda-forge)
+=======
+=======
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+>>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
   strategy:
     matrix:
 <<<<<<< HEAD
@@ -76,6 +82,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Rerendered with conda-forge
 <<<<<<< HEAD
 >>>>>>> bef9287 (Rerendered with conda-forge)
@@ -84,7 +91,12 @@ jobs:
 =======
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> 04268ed (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 99ef6e6 (Re-rendered with conda smithy)
+=======
+=======
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+>>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
         UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.16python3.7.____cpython:
         CONFIG: osx_64_numpy1.16python3.7.____cpython
@@ -132,6 +144,7 @@ jobs:
         CONFIG: osx_64_python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -213,7 +226,12 @@ jobs:
     maxParallel: 8
   timeoutInMinutes: 360
 >>>>>>> 9f152c5 (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
+=======
+=======
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+>>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
 
   steps:
   # TODO: Fast finish on azure pipelines?
@@ -235,13 +253,12 @@ jobs:
       ./.scripts/run_osx_build.sh
     displayName: Run OSX build
     env:
-<<<<<<< HEAD
-<<<<<<< HEAD
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
       FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
 <<<<<<< HEAD
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
@@ -304,4 +321,10 @@ jobs:
     env:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
 >>>>>>> 9f152c5 (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
+=======
+=======
+      STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+>>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)

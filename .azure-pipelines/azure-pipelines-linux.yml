@@ -32,6 +32,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Rerendered with conda-forge
 =======
 >>>>>>> 6b951ff (Rerendered with conda-forge)
@@ -55,6 +56,8 @@ jobs:
 =======
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> 04268ed (Re-rendered with conda smithy)
+=======
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
         UPLOAD_PACKAGES: 'True'
 <<<<<<< HEAD
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
@@ -79,11 +82,14 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 99ef6e6 (Re-rendered with conda smithy)
 =======
 >>>>>>> 02042b7 (Rerendered with conda-forge)
+=======
+>>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
 =======
 <<<<<<< HEAD
       linux_python3.6.____cpython:
@@ -113,6 +119,8 @@ jobs:
 >>>>>>> Rerendered with conda-forge
 =======
 >>>>>>> 9f152c5... Re-rendered with conda smithy
+=======
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
   timeoutInMinutes: 360
 
@@ -193,12 +201,12 @@ jobs:
         .scripts/run_docker_build.sh
     displayName: Run docker build
     env:
-<<<<<<< HEAD
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
       FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
 <<<<<<< HEAD
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
@@ -231,4 +239,10 @@ jobs:
     env:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
 >>>>>>> 9f152c5 (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
+=======
+=======
+      STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+>>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)

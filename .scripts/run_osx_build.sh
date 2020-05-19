@@ -97,6 +97,7 @@ conda build ./recipe -m ./.ci_support/${CONFIG}.yaml --clobber-file ./.ci_suppor
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
   echo -e "\n\nUploading the packages."
@@ -115,11 +116,14 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 >>>>>>> fa8a94f (Rerendered with conda-forge)
 =======
 >>>>>>> 04268ed (Re-rendered with conda smithy)
+=======
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
 validate_recipe_outputs "pycoalescence-feedstock"
 
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
   echo -e "\n\nUploading the packages."
   upload_package --validate --feedstock-name="pycoalescence-feedstock" ./ ./recipe ./.ci_support/${CONFIG}.yaml
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -190,5 +194,10 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 =======
 =======
 >>>>>>> 9f152c5 (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
+=======
+=======
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+>>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
 fi

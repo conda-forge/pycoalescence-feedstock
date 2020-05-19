@@ -124,6 +124,7 @@ docker run ${DOCKER_RUN_ARGS} \
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Updated to 1.2.7post14
 >>>>>>> 99ef6e6 (Re-rendered with conda smithy)
@@ -148,7 +149,14 @@ docker run ${DOCKER_RUN_ARGS} \
 =======
 =======
 >>>>>>> 9f152c5 (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
+=======
+=======
+           -e FEEDSTOCK_TOKEN \
+           -e STAGING_BINSTAR_TOKEN \
+>>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+>>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
            $DOCKER_IMAGE \
            bash \
            /home/conda/feedstock_root/${PROVIDER_DIR}/build_steps.sh

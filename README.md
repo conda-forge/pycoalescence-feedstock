@@ -144,6 +144,7 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=osx&configuration=osx_python3.8.____cpython" alt="variant">
 =======
@@ -266,6 +267,9 @@ Current build status
 =======
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> Re-rendered with conda smithy
+=======
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=osx&configuration=osx_python3.8.____cpython" alt="variant">
+>>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
                 </a>
               </td>
             </tr><tr>

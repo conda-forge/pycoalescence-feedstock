@@ -81,6 +81,7 @@ docker run ${DOCKER_RUN_ARGS} \
            -e CI \
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
            -e FEEDSTOCK_NAME \
            -e CPU_COUNT \
            -e BUILD_WITH_CONDA_DEBUG \
@@ -96,6 +97,10 @@ docker run ${DOCKER_RUN_ARGS} \
 =======
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> Re-rendered with conda smithy
+=======
+           -e FEEDSTOCK_TOKEN \
+           -e STAGING_BINSTAR_TOKEN \
+>>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
            $DOCKER_IMAGE \
            bash \
            /home/conda/feedstock_root/${PROVIDER_DIR}/build_steps.sh

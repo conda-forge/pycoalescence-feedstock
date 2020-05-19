@@ -26,6 +26,7 @@ conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-fo
 conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 <<<<<<< HEAD
@@ -43,6 +44,8 @@ conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forg
 =======
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> Re-rendered with conda smithy
+=======
+>>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
 
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
@@ -92,12 +95,16 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
     --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
 validate_recipe_outputs "pycoalescence-feedstock"
 >>>>>>> Re-rendered with conda smithy
 
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+<<<<<<< HEAD
 <<<<<<< HEAD
     upload_package "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 >>>>>>> Re-rendered with conda smithy
@@ -112,6 +119,9 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
     upload_package "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 >>>>>>> 9f152c5... Re-rendered with conda smithy
 >>>>>>> Re-rendered with conda smithy
+=======
+    upload_package --validate --feedstock-name="pycoalescence-feedstock" "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+>>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

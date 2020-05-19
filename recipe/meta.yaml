@@ -28,11 +28,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-#  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  url: https://bitbucket.org/thompsonsed/pycoalescence/get/develop.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   number: 0
@@ -44,6 +44,9 @@ build:
 =======
   number: 5
 >>>>>>> Incremented build number
+=======
+  number: 6
+>>>>>>> Removed bitbucket build and incremented build number
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   detect_binary_files_with_prefix: true
   skip: true  # [(win and vc<14)]

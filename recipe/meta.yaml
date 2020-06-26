@@ -35,6 +35,7 @@ build:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
   detect_binary_files_with_prefix: True
@@ -47,6 +48,9 @@ build:
 =======
   number: 6
 >>>>>>> Removed bitbucket build and incremented build number
+=======
+  number: 7
+>>>>>>> Updated build number
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   detect_binary_files_with_prefix: true
   skip: true  # [(win and vc<14)]

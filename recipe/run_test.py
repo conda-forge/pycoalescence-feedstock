@@ -38,14 +38,14 @@ class TestImports(unittest.TestCase):
 class TestBasicSimulation(unittest.TestCase):
     """Tests that a very basic simulation can be performed. """
 
-    @classmethod
-    def setUpClass(cls):
-        """Runs a very basic simulation."""
-        from pycoalescence import Simulation
-        cls.sim = Simulation(logging_level=50)
-        cls.sim.set_simulation_parameters(seed=1, job_type=2, output_directory="tmp", min_speciation_rate=0.9)
-        cls.sim.set_map("null", 10, 10)
-        cls.sim.run()
+	@classmethod
+	def setUpClass(cls):
+		"""Runs a very basic simulation."""
+		from pycoalescence import Simulation
+		cls.sim = Simulation(logging_level=50)
+		cls.sim.set_simulation_parameters(seed=1, task=2, output_directory="tmp", min_speciation_rate=0.9)
+		cls.sim.set_map("null", 10, 10)
+		cls.sim.run()
 
     @classmethod
     def tearDownClass(cls):

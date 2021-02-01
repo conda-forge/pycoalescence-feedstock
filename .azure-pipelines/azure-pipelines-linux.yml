@@ -11,6 +11,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       linux_64_numpy1.16python3.6.____cpython:
         CONFIG: linux_64_numpy1.16python3.6.____cpython
 =======
@@ -59,21 +60,32 @@ jobs:
 =======
       linux_python3.6.____cpython:
         CONFIG: linux_python3.6.____cpython
+=======
+      linux_64_python3.6.____cpython:
+        CONFIG: linux_64_python3.6.____cpython
+>>>>>>> Updated to 1.2.7post14
         UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_python3.7.____cpython:
-        CONFIG: linux_python3.7.____cpython
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+      linux_64_python3.7.____cpython:
+        CONFIG: linux_64_python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_python3.8.____cpython:
-        CONFIG: linux_python3.8.____cpython
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+      linux_64_python3.8.____cpython:
+        CONFIG: linux_64_python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
-        DOCKER_IMAGE: condaforge/linux-anvil-comp7
-    maxParallel: 8
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
   timeoutInMinutes: 360
 
   steps:
+<<<<<<< HEAD
 >>>>>>> Re-rendered with conda smithy
+=======
+  - script: |
+         rm -rf /opt/ghc
+         df -h
+    displayName: Manage disk space
+
+>>>>>>> Updated to 1.2.7post14
   # configure qemu binfmt-misc running.  This allows us to run docker containers
   # embedded qemu-static
   - script: |
@@ -86,6 +98,9 @@ jobs:
         export CI=azure
         export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Updated to 1.2.7post14
         export FEEDSTOCK_NAME=$(basename ${BUILD_REPOSITORY_NAME})
         .scripts/run_docker_build.sh
     displayName: Run docker build

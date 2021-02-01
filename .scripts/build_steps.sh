@@ -27,6 +27,7 @@ CONDARC
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8aa0598 (Rerendered with conda-forge)
 =======
 <<<<<<< HEAD
@@ -34,6 +35,9 @@ CONDARC
 =======
 <<<<<<< HEAD
 >>>>>>> 5931514 (Updated to 1.2.7post14)
+=======
+<<<<<<< HEAD
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
 conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
 <<<<<<< HEAD
 =======
@@ -115,7 +119,13 @@ conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forg
 =======
 conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
 >>>>>>> 16a86d6 (Updated to 1.2.7post14)
+<<<<<<< HEAD
 >>>>>>> 5931514 (Updated to 1.2.7post14)
+=======
+=======
+conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
 
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
@@ -135,6 +145,7 @@ make_build_number "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -277,6 +288,8 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 >>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
 =======
 =======
+=======
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
 
 if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
     if [[ "x${BUILD_OUTPUT_ID:-}" != "x" ]]; then
@@ -296,8 +309,14 @@ else
     if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
         upload_package --validate --feedstock-name="${FEEDSTOCK_NAME}"  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
     fi
+<<<<<<< HEAD
 >>>>>>> 16a86d6 (Updated to 1.2.7post14)
+<<<<<<< HEAD
 >>>>>>> 5931514 (Updated to 1.2.7post14)
+=======
+=======
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

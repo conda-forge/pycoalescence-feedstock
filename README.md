@@ -43,10 +43,16 @@ Current build status
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8aa0598 (Rerendered with conda-forge)
 =======
 <<<<<<< HEAD
 >>>>>>> 5931514 (Updated to 1.2.7post14)
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
               <td>linux_64_numpy1.16python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
@@ -101,7 +107,10 @@ Current build status
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=osx&configuration=osx_64_numpy1.19python3.9.____cpython" alt="variant">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
 =======
               <td>linux_python3.6.____cpython</td>
 =======
@@ -240,7 +249,12 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=win&configuration=win_python3.7.____cpython" alt="variant">
+<<<<<<< HEAD
 >>>>>>> bef9287 (Rerendered with conda-forge)
+=======
+=======
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
                 </a>
               </td>
             </tr><tr>
@@ -269,8 +283,11 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=win&configuration=win_64_numpy1.19python3.9.____cpython" alt="variant">
 =======
+=======
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.7.____cpython" alt="variant">
                 </a>
               </td>
@@ -502,6 +519,9 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3218&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=win&configuration=win_64_python3.8.____cpython" alt="variant">
+=======
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pycoalescence-feedstock?branchName=master&jobName=win&configuration=win_64_numpy1.19python3.9.____cpython" alt="variant">
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
                 </a>
               </td>
             </tr>
@@ -512,6 +532,7 @@ Current build status
   </tr>
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -539,7 +560,12 @@ Current build status
 =======
 =======
 >>>>>>> 16a86d6 (Updated to 1.2.7post14)
+<<<<<<< HEAD
 >>>>>>> 5931514 (Updated to 1.2.7post14)
+=======
+=======
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
 </table>
 
 Current release info

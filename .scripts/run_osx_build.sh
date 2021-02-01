@@ -32,6 +32,7 @@ conda install -n base --quiet --yes "conda-forge-ci-setup=3" conda-build pip
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 conda install -n base --quiet --yes "conda-forge-ci-setup=3" conda-build pip
 =======
 conda install -n base --quiet --yes conda-forge-ci-setup=3 conda-build pip
@@ -57,7 +58,13 @@ conda install -n base --quiet --yes conda-forge-ci-setup=3 conda-build pip
 =======
 conda install -n base --quiet --yes "conda-forge-ci-setup=3" conda-build pip
 >>>>>>> 16a86d6 (Updated to 1.2.7post14)
+<<<<<<< HEAD
 >>>>>>> 5931514 (Updated to 1.2.7post14)
+=======
+=======
+conda install -n base --quiet --yes "conda-forge-ci-setup=3" conda-build pip
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
 
 
 
@@ -83,6 +90,7 @@ echo -e "\n\nMaking the build clobber file and running the build."
 make_build_number ./ ./recipe ./.ci_support/${CONFIG}.yaml
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -211,6 +219,8 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 >>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
 =======
 =======
+=======
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
 
 conda build ./recipe -m ./.ci_support/${CONFIG}.yaml --suppress-variables --clobber-file ./.ci_support/clobber_${CONFIG}.yaml ${EXTRA_CB_OPTIONS:-}
 validate_recipe_outputs "${FEEDSTOCK_NAME}"
@@ -218,6 +228,12 @@ validate_recipe_outputs "${FEEDSTOCK_NAME}"
 if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
   echo -e "\n\nUploading the packages."
   upload_package --validate --feedstock-name="${FEEDSTOCK_NAME}" ./ ./recipe ./.ci_support/${CONFIG}.yaml
+<<<<<<< HEAD
 >>>>>>> 16a86d6 (Updated to 1.2.7post14)
+<<<<<<< HEAD
 >>>>>>> 5931514 (Updated to 1.2.7post14)
+=======
+=======
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
 fi

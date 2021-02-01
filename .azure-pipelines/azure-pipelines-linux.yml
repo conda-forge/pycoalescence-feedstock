@@ -23,7 +23,11 @@ jobs:
 >>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5931514 (Updated to 1.2.7post14)
+=======
+<<<<<<< HEAD
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
       linux_64_numpy1.16python3.6.____cpython:
         CONFIG: linux_64_numpy1.16python3.6.____cpython
 <<<<<<< HEAD
@@ -179,23 +183,49 @@ jobs:
       linux_64_python3.8.____cpython:
         CONFIG: linux_64_python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
+=======
+      linux_64_numpy1.16python3.6.____cpython:
+        CONFIG: linux_64_numpy1.16python3.6.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+      linux_64_numpy1.16python3.7.____cpython:
+        CONFIG: linux_64_numpy1.16python3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+      linux_64_numpy1.16python3.8.____cpython:
+        CONFIG: linux_64_numpy1.16python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+      linux_64_numpy1.19python3.9.____cpython:
+        CONFIG: linux_64_numpy1.19python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
   timeoutInMinutes: 360
 
   steps:
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9f152c5 (Re-rendered with conda smithy)
 <<<<<<< HEAD
 >>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
 =======
 =======
+=======
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
   - script: |
          rm -rf /opt/ghc
          df -h
     displayName: Manage disk space
 
+<<<<<<< HEAD
 >>>>>>> 16a86d6 (Updated to 1.2.7post14)
+<<<<<<< HEAD
 >>>>>>> 5931514 (Updated to 1.2.7post14)
+=======
+=======
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
   # configure qemu binfmt-misc running.  This allows us to run docker containers
   # embedded qemu-static
   - script: |
@@ -213,6 +243,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Updated to 1.2.7post14
 <<<<<<< HEAD
@@ -220,7 +251,12 @@ jobs:
 =======
 =======
 >>>>>>> 16a86d6 (Updated to 1.2.7post14)
+<<<<<<< HEAD
 >>>>>>> 5931514 (Updated to 1.2.7post14)
+=======
+=======
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
         export FEEDSTOCK_NAME=$(basename ${BUILD_REPOSITORY_NAME})
         .scripts/run_docker_build.sh
     displayName: Run docker build
@@ -230,6 +266,7 @@ jobs:
 <<<<<<< HEAD
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -269,4 +306,10 @@ jobs:
 =======
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
 >>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+<<<<<<< HEAD
 >>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+=======
+=======
+      STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)

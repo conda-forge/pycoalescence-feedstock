@@ -19,7 +19,11 @@ jobs:
 >>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5931514 (Updated to 1.2.7post14)
+=======
+<<<<<<< HEAD
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
     vmImage: macOS-10.15
 <<<<<<< HEAD
 =======
@@ -113,13 +117,29 @@ jobs:
 >>>>>>> 6b951ff (Rerendered with conda-forge)
 =======
 >>>>>>> 5bd6ac8 (Rerendered with conda-forge)
+=======
+    vmImage: macOS-10.15
+  strategy:
+    matrix:
+      osx_64_numpy1.16python3.6.____cpython:
+        CONFIG: osx_64_numpy1.16python3.6.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_numpy1.16python3.7.____cpython:
+        CONFIG: osx_64_numpy1.16python3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_numpy1.16python3.8.____cpython:
+        CONFIG: osx_64_numpy1.16python3.8.____cpython
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
         UPLOAD_PACKAGES: 'True'
       osx_64_numpy1.19python3.9.____cpython:
         CONFIG: osx_64_numpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
 =======
 <<<<<<< HEAD
       osx_python3.6.____cpython:
@@ -237,7 +257,12 @@ jobs:
 =======
 =======
 >>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+<<<<<<< HEAD
 >>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+=======
+=======
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
 
   steps:
   # TODO: Fast finish on azure pipelines?
@@ -253,6 +278,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Updated to 1.2.7post14
 <<<<<<< HEAD
@@ -260,7 +286,12 @@ jobs:
 =======
 =======
 >>>>>>> 16a86d6 (Updated to 1.2.7post14)
+<<<<<<< HEAD
 >>>>>>> 5931514 (Updated to 1.2.7post14)
+=======
+=======
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
       export FEEDSTOCK_NAME=$(basename ${BUILD_REPOSITORY_NAME})
       ./.scripts/run_osx_build.sh
     displayName: Run OSX build
@@ -270,6 +301,7 @@ jobs:
 <<<<<<< HEAD
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -339,4 +371,10 @@ jobs:
 =======
       STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
 >>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+<<<<<<< HEAD
 >>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+=======
+=======
+      STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
+>>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
+>>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)

@@ -5,7 +5,23 @@ channel_targets:
 cxx_compiler:
 - vs2017
 numpy:
+<<<<<<< HEAD
 - '1.16'
+=======
+<<<<<<<< HEAD:.ci_support/win_64_python3.7.____cpython.yaml
+- '1.16'
+========
+<<<<<<< HEAD
+<<<<<<< HEAD
+- '1.14'
+=======
+- '1.16'
+>>>>>>> fc77e24 (Rerendered with conda-forge)
+=======
+- '1.14'
+>>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
+>>>>>>>> 16a86d6 (Updated to 1.2.7post14):.ci_support/win_python3.7.____cpython.yaml
+>>>>>>> 16a86d6 (Updated to 1.2.7post14)
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -16,6 +32,23 @@ python:
 - 3.7.* *_cpython
 sqlite:
 - '3'
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:.ci_support/win_64_python3.7.____cpython.yaml
+target_platform:
+- win-64
+vc:
+- '14'
+zip_keys:
+- - python
+  - numpy
+========
+<<<<<<< HEAD
+<<<<<<< HEAD
+vc:
+- '14'
+=======
+>>>>>>> 16a86d6 (Updated to 1.2.7post14)
 target_platform:
 - win-64
 vc:
@@ -26,3 +59,12 @@ zip_keys:
   - numpy
 =======
 >>>>>>> fc77e24 (Rerendered with conda-forge):.ci_support/win_python3.7.____cpython.yaml
+<<<<<<< HEAD
+=======
+>>>>>>> fc77e24 (Rerendered with conda-forge)
+=======
+vc:
+- '14'
+>>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
+>>>>>>>> 16a86d6 (Updated to 1.2.7post14):.ci_support/win_python3.7.____cpython.yaml
+>>>>>>> 16a86d6 (Updated to 1.2.7post14)

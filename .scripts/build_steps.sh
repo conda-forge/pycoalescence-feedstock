@@ -26,10 +26,14 @@ CONDARC
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8aa0598 (Rerendered with conda-forge)
 =======
 <<<<<<< HEAD
 >>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
+=======
+<<<<<<< HEAD
+>>>>>>> 5931514 (Updated to 1.2.7post14)
 conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
 <<<<<<< HEAD
 =======
@@ -105,7 +109,13 @@ conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forg
 =======
 =======
 >>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+<<<<<<< HEAD
 >>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+=======
+=======
+conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
+>>>>>>> 16a86d6 (Updated to 1.2.7post14)
+>>>>>>> 5931514 (Updated to 1.2.7post14)
 
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
@@ -125,6 +135,7 @@ make_build_number "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -262,7 +273,31 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 =======
     upload_package --validate --feedstock-name="pycoalescence-feedstock" "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 >>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+<<<<<<< HEAD
 >>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+=======
+=======
+
+if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
+    if [[ "x${BUILD_OUTPUT_ID:-}" != "x" ]]; then
+        EXTRA_CB_OPTIONS="${EXTRA_CB_OPTIONS:-} --output-id ${BUILD_OUTPUT_ID}"
+    fi
+    conda debug "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
+        ${EXTRA_CB_OPTIONS:-} \
+        --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"
+    # Drop into an interactive shell
+    /bin/bash
+else
+    conda build "${RECIPE_ROOT}" -m "${CI_SUPPORT}/${CONFIG}.yaml" \
+        --suppress-variables ${EXTRA_CB_OPTIONS:-} \
+        --clobber-file "${CI_SUPPORT}/clobber_${CONFIG}.yaml"
+    validate_recipe_outputs "${FEEDSTOCK_NAME}"
+
+    if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+        upload_package --validate --feedstock-name="${FEEDSTOCK_NAME}"  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
+    fi
+>>>>>>> 16a86d6 (Updated to 1.2.7post14)
+>>>>>>> 5931514 (Updated to 1.2.7post14)
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

@@ -36,20 +36,23 @@ jobs:
 >>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
   strategy:
     matrix:
-      win_python3.6.____cpython:
-        CONFIG: win_python3.6.____cpython
+      win_64_python3.6.____cpython:
+        CONFIG: win_64_python3.6.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_python3.7.____cpython:
-        CONFIG: win_python3.7.____cpython
+      win_64_python3.7.____cpython:
+        CONFIG: win_64_python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
-      win_python3.8.____cpython:
-        CONFIG: win_python3.8.____cpython
+      win_64_python3.8.____cpython:
+        CONFIG: win_64_python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
+<<<<<<< HEAD
     maxParallel: 4
 <<<<<<< HEAD
 >>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
 =======
 >>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
+=======
+>>>>>>> 16a86d6 (Updated to 1.2.7post14)
   timeoutInMinutes: 360
   variables:
     CONDA_BLD_PATH: D:\\bld\\
@@ -147,6 +150,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         packageSpecs: 'python=3.6 conda-build conda "conda-forge-ci-setup=3" pip' # Optional
 =======
         packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
@@ -163,6 +167,9 @@ jobs:
 =======
         packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
 >>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
+=======
+        packageSpecs: 'python=3.6 conda-build conda "conda-forge-ci-setup=3" pip' # Optional
+>>>>>>> 16a86d6 (Updated to 1.2.7post14)
         installOptions: "-c conda-forge"
         updateConda: true
       displayName: Install conda-build and activate environment
@@ -231,15 +238,17 @@ jobs:
 >>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
 =======
     - script: |
+        set "FEEDSTOCK_NAME=%BUILD_REPOSITORY_NAME:*/=%"
         call activate base
-        validate_recipe_outputs "pycoalescence-feedstock"
+        validate_recipe_outputs "%FEEDSTOCK_NAME%"
       displayName: Validate Recipe Outputs
 >>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
 
     - script: |
         set "GIT_BRANCH=%BUILD_SOURCEBRANCHNAME%"
+        set "FEEDSTOCK_NAME=%BUILD_REPOSITORY_NAME:*/=%"
         call activate base
-        upload_package --validate --feedstock-name="pycoalescence-feedstock" .\ ".\recipe" .ci_support\%CONFIG%.yaml
+        upload_package --validate --feedstock-name="%FEEDSTOCK_NAME%" .\ ".\recipe" .ci_support\%CONFIG%.yaml
       displayName: Upload package
       env:
         BINSTAR_TOKEN: $(BINSTAR_TOKEN)

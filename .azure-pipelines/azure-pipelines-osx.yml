@@ -15,7 +15,11 @@ jobs:
 >>>>>>> 8aa0598 (Rerendered with conda-forge)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
+=======
+<<<<<<< HEAD
+>>>>>>> 5931514 (Updated to 1.2.7post14)
     vmImage: macOS-10.15
 <<<<<<< HEAD
 =======
@@ -212,18 +216,20 @@ jobs:
 =======
 =======
     vmImage: macOS-10.14
+=======
+    vmImage: macOS-10.15
+>>>>>>> 16a86d6 (Updated to 1.2.7post14)
   strategy:
     matrix:
-      osx_python3.6.____cpython:
-        CONFIG: osx_python3.6.____cpython
+      osx_64_python3.6.____cpython:
+        CONFIG: osx_64_python3.6.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_python3.7.____cpython:
-        CONFIG: osx_python3.7.____cpython
+      osx_64_python3.7.____cpython:
+        CONFIG: osx_64_python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_python3.8.____cpython:
-        CONFIG: osx_python3.8.____cpython
+      osx_64_python3.8.____cpython:
+        CONFIG: osx_64_python3.8.____cpython
         UPLOAD_PACKAGES: 'True'
-    maxParallel: 8
   timeoutInMinutes: 360
 >>>>>>> 9f152c5 (Re-rendered with conda smithy)
 <<<<<<< HEAD
@@ -246,9 +252,15 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Updated to 1.2.7post14
+<<<<<<< HEAD
 >>>>>>> 8aa0598 (Rerendered with conda-forge)
+=======
+=======
+>>>>>>> 16a86d6 (Updated to 1.2.7post14)
+>>>>>>> 5931514 (Updated to 1.2.7post14)
       export FEEDSTOCK_NAME=$(basename ${BUILD_REPOSITORY_NAME})
       ./.scripts/run_osx_build.sh
     displayName: Run OSX build

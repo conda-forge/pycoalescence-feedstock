@@ -31,6 +31,7 @@ conda install -n base --quiet --yes "conda-forge-ci-setup=3" conda-build pip
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 conda install -n base --quiet --yes "conda-forge-ci-setup=3" conda-build pip
 =======
 conda install -n base --quiet --yes conda-forge-ci-setup=3 conda-build pip
@@ -50,7 +51,13 @@ conda install -n base --quiet --yes conda-forge-ci-setup=3 conda-build pip
 =======
 conda install -n base --quiet --yes conda-forge-ci-setup=3 conda-build pip
 >>>>>>> 9f152c5 (Re-rendered with conda smithy)
+<<<<<<< HEAD
 >>>>>>> 5e4b5e2 (Re-rendered with conda smithy)
+=======
+=======
+conda install -n base --quiet --yes "conda-forge-ci-setup=3" conda-build pip
+>>>>>>> 16a86d6 (Updated to 1.2.7post14)
+>>>>>>> 5931514 (Updated to 1.2.7post14)
 
 
 
@@ -76,6 +83,7 @@ echo -e "\n\nMaking the build clobber file and running the build."
 make_build_number ./ ./recipe ./.ci_support/${CONFIG}.yaml
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -199,5 +207,17 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 =======
 =======
 >>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+<<<<<<< HEAD
 >>>>>>> 10b5786 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
+=======
+=======
+
+conda build ./recipe -m ./.ci_support/${CONFIG}.yaml --suppress-variables --clobber-file ./.ci_support/clobber_${CONFIG}.yaml ${EXTRA_CB_OPTIONS:-}
+validate_recipe_outputs "${FEEDSTOCK_NAME}"
+
+if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
+  echo -e "\n\nUploading the packages."
+  upload_package --validate --feedstock-name="${FEEDSTOCK_NAME}" ./ ./recipe ./.ci_support/${CONFIG}.yaml
+>>>>>>> 16a86d6 (Updated to 1.2.7post14)
+>>>>>>> 5931514 (Updated to 1.2.7post14)
 fi

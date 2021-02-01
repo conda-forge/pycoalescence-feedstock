@@ -8,8 +8,11 @@ jobs:
     vmImage: vs2017-win2016
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Re-rendered with conda smithy for windows
+=======
+>>>>>>> origin/master
   strategy:
     matrix:
       win_64_python3.6.____cpython:
@@ -26,6 +29,7 @@ jobs:
     CONDA_BLD_PATH: D:\\bld\\
 
   steps:
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   timeoutInMinutes: 360
@@ -49,6 +53,8 @@ jobs:
 >>>>>>> Rerendered with conda-forge
 =======
 >>>>>>> Re-rendered with conda smithy for windows
+=======
+>>>>>>> origin/master
     - script: |
         choco install vcpython27 -fdv -y --debug
       condition: contains(variables['CONFIG'], 'vs2008')

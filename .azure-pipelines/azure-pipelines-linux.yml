@@ -12,6 +12,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       linux_64_numpy1.16python3.6.____cpython:
         CONFIG: linux_64_numpy1.16python3.6.____cpython
 =======
@@ -49,6 +50,20 @@ jobs:
         UPLOAD_PACKAGES: True
 >>>>>>> Rerendered with conda-forge
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
+=======
+      linux_64_python3.6.____cpython:
+        CONFIG: linux_64_python3.6.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+      linux_64_python3.7.____cpython:
+        CONFIG: linux_64_python3.7.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+      linux_64_python3.8.____cpython:
+        CONFIG: linux_64_python3.8.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-comp7
+>>>>>>> origin/master
   timeoutInMinutes: 360
 
   steps:
@@ -57,6 +72,7 @@ jobs:
          df -h
     displayName: Manage disk space
 
+<<<<<<< HEAD
 =======
       linux_python3.6.____cpython:
         CONFIG: linux_python3.6.____cpython
@@ -86,6 +102,8 @@ jobs:
     displayName: Manage disk space
 
 >>>>>>> Updated to 1.2.7post14
+=======
+>>>>>>> origin/master
   # configure qemu binfmt-misc running.  This allows us to run docker containers
   # embedded qemu-static
   - script: |
@@ -99,8 +117,11 @@ jobs:
         export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Updated to 1.2.7post14
+=======
+>>>>>>> origin/master
         export FEEDSTOCK_NAME=$(basename ${BUILD_REPOSITORY_NAME})
         .scripts/run_docker_build.sh
     displayName: Run docker build

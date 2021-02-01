@@ -8,6 +8,7 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     vmImage: macOS-10.15
 =======
     vmImage: macOS-10.14
@@ -61,6 +62,14 @@ jobs:
       osx_64_python3.6.____cpython:
         CONFIG: osx_64_python3.6.____cpython
         UPLOAD_PACKAGES: 'True'
+=======
+    vmImage: macOS-10.15
+  strategy:
+    matrix:
+      osx_64_python3.6.____cpython:
+        CONFIG: osx_64_python3.6.____cpython
+        UPLOAD_PACKAGES: 'True'
+>>>>>>> origin/master
       osx_64_python3.7.____cpython:
         CONFIG: osx_64_python3.7.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -101,8 +110,11 @@ jobs:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Updated to 1.2.7post14
+=======
+>>>>>>> origin/master
       export FEEDSTOCK_NAME=$(basename ${BUILD_REPOSITORY_NAME})
       ./.scripts/run_osx_build.sh
     displayName: Run OSX build

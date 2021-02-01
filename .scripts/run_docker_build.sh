@@ -15,17 +15,23 @@ RECIPE_ROOT="${FEEDSTOCK_ROOT}/recipe"
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Updated to 1.2.7post14
+=======
+>>>>>>> origin/master
 if [ -z ${FEEDSTOCK_NAME} ]; then
     export FEEDSTOCK_NAME=$(basename ${FEEDSTOCK_ROOT})
 fi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Re-rendered with conda smithy
 =======
 >>>>>>> Updated to 1.2.7post14
+=======
+>>>>>>> origin/master
 docker info
 
 # In order for the conda-build process in the container to write to the mounted
@@ -82,11 +88,14 @@ docker run ${DOCKER_RUN_ARGS} \
            -e CONFIG \
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
            -e BINSTAR_TOKEN \
 >>>>>>> Re-rendered with conda smithy
 =======
 >>>>>>> Updated to 1.2.7post14
+=======
+>>>>>>> origin/master
            -e HOST_USER_ID \
            -e UPLOAD_PACKAGES \
            -e GIT_BRANCH \
@@ -96,13 +105,17 @@ docker run ${DOCKER_RUN_ARGS} \
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Updated to 1.2.7post14
+=======
+>>>>>>> origin/master
            -e FEEDSTOCK_NAME \
            -e CPU_COUNT \
            -e BUILD_WITH_CONDA_DEBUG \
            -e BUILD_OUTPUT_ID \
            -e BINSTAR_TOKEN \
+<<<<<<< HEAD
 <<<<<<< HEAD
            -e FEEDSTOCK_TOKEN \
            -e STAGING_BINSTAR_TOKEN \
@@ -117,6 +130,8 @@ docker run ${DOCKER_RUN_ARGS} \
 =======
 =======
 >>>>>>> Updated to 1.2.7post14
+=======
+>>>>>>> origin/master
            -e FEEDSTOCK_TOKEN \
            -e STAGING_BINSTAR_TOKEN \
 >>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36

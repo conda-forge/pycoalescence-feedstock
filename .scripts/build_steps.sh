@@ -22,6 +22,7 @@ CONDARC
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
 =======
 conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forge
@@ -50,6 +51,9 @@ conda install --yes --quiet conda-forge-ci-setup=3 conda-build pip -c conda-forg
 =======
 conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
 >>>>>>> Updated to 1.2.7post14
+=======
+conda install --yes --quiet "conda-forge-ci-setup=3" conda-build pip -c conda-forge
+>>>>>>> origin/master
 
 # set up the condarc
 setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
@@ -67,6 +71,7 @@ source run_conda_forge_build_setup
 # make the build number clobber
 make_build_number "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -129,6 +134,9 @@ if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
 >>>>>>> MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36
 =======
 
+=======
+
+>>>>>>> origin/master
 if [[ "${BUILD_WITH_CONDA_DEBUG:-0}" == 1 ]]; then
     if [[ "x${BUILD_OUTPUT_ID:-}" != "x" ]]; then
         EXTRA_CB_OPTIONS="${EXTRA_CB_OPTIONS:-} --output-id ${BUILD_OUTPUT_ID}"
@@ -147,7 +155,10 @@ else
     if [[ "${UPLOAD_PACKAGES}" != "False" ]]; then
         upload_package --validate --feedstock-name="${FEEDSTOCK_NAME}"  "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
     fi
+<<<<<<< HEAD
 >>>>>>> Updated to 1.2.7post14
+=======
+>>>>>>> origin/master
 fi
 
 touch "${FEEDSTOCK_ROOT}/build_artifacts/conda-forge-build-done-${CONFIG}"

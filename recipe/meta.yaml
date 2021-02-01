@@ -22,27 +22,10 @@ build:
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
   detect_binary_files_with_prefix: True
   skip: True  # [(win and vc < 14)]
-=======
-  number: 4
-=======
-  number: 5
->>>>>>> Incremented build number
-=======
-  number: 6
->>>>>>> Removed bitbucket build and incremented build number
-=======
-  number: 7
->>>>>>> Updated build number
-=======
-  number: 1
->>>>>>> Updated to 1.2.7post14
-=======
   number: 0
->>>>>>> Reset the build number to 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   detect_binary_files_with_prefix: true
   skip: true  # [(win and vc<14)]
->>>>>>> Re-rendered with conda smithy for windows
 
 requirements:
   build:

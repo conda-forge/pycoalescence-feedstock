@@ -1,7 +1,7 @@
 About pycoalescence
 ===================
 
-Home: https://bitbucket.org/thompsonsed/pycoalescence/
+Home: https://github.com/thompsonsed/pycoalescence/
 
 Package license: MIT
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pycoalescence-f
 
 Summary: Ecological simulator for spatially explicit neutral models using coalescence methods
 
-Development: https://bitbucket.org/thompsonsed/pycoalescence/
+Development: https://github.com/thompsonsed/pycoalescence/
 
 Documentation: http://pycoalescence.readthedocs.io/
 

@@ -8,8 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-#  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  url: https://bitbucket.org/thompsonsed/pycoalescence/get/develop.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -51,7 +50,7 @@ test:
     - pycoalescence.necsim
 
 about:
-  home: https://bitbucket.org/thompsonsed/pycoalescence/
+  home: https://github.com/thompsonsed/pycoalescence/
   license: MIT
   license_file: LICENSE.txt
   summary: 'Ecological simulator for spatially explicit neutral models using coalescence methods'
@@ -61,7 +60,7 @@ about:
     dispersal, speciation and ecological drift in a spatially-explicit
     manner.
   doc_url: http://pycoalescence.readthedocs.io/
-  dev_url: https://bitbucket.org/thompsonsed/pycoalescence/
+  dev_url: https://github.com/thompsonsed/pycoalescence/
 
 extra:
   recipe-maintainers:

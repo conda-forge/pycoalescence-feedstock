@@ -18,6 +18,7 @@ class TestImports(unittest.TestCase):
         """Tests that the main pycoalescence objects can be imported and are not NoneType."""
         try:
             from pycoalescence import Simulation, CoalescenceTree, DispersalSimulation
+
             for each in ["Simulation", "CoalescenceTree", "DispersalSimulation"]:
                 if eval(each) is None:
                     raise ImportError("{} is None.".format(each))
@@ -29,6 +30,7 @@ class TestImports(unittest.TestCase):
         try:
             import pycoalescence.necsim.libnecsim as libnecsim
             from pycoalescence.necsim import libnecsim
+
             if libnecsim is None:
                 raise ImportError("libnecsim is None.")
         except ImportError as ie:
@@ -40,17 +42,18 @@ class TestBasicSimulation(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-		"""Runs a very basic simulation."""
-		from pycoalescence import Simulation
-		cls.sim = Simulation(logging_level=50)
-		cls.sim.set_simulation_parameters(seed=1, task=2, output_directory="tmp", min_speciation_rate=0.9)
-		cls.sim.set_map("null", 10, 10)
-		cls.sim.run()
+        """Runs a very basic simulation."""
+        from pycoalescence import Simulation
+
+        cls.sim = Simulation(logging_level=50)
+        cls.sim.set_simulation_parameters(seed=1, task=2, output_directory="tmp", min_speciation_rate=0.9)
+        cls.sim.set_map("null", 10, 10)
+        cls.sim.run()
 
     @classmethod
     def tearDownClass(cls):
         """Removes the tmp directory."""
-        if os.path.exists('tmp'):
+        if os.path.exists("tmp"):
             try:
                 shutil.rmtree("tmp")
             except OSError:

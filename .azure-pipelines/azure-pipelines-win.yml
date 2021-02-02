@@ -6,18 +6,6 @@ jobs:
 - job: win
   pool:
     vmImage: vs2017-win2016
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> Re-rendered with conda smithy for windows
->>>>>>> bef9287 (Rerendered with conda-forge)
   strategy:
     matrix:
       win_64_numpy1.16python3.6.____cpython:
@@ -32,106 +20,11 @@ jobs:
       win_64_numpy1.19python3.9.____cpython:
         CONFIG: win_64_numpy1.19python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
-=======
-=======
->>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
-  strategy:
-    matrix:
-      win_64_python3.6.____cpython:
-        CONFIG: win_64_python3.6.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_python3.7.____cpython:
-        CONFIG: win_64_python3.7.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_python3.8.____cpython:
-        CONFIG: win_64_python3.8.____cpython
-        UPLOAD_PACKAGES: 'True'
-<<<<<<< HEAD
-    maxParallel: 4
-<<<<<<< HEAD
->>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
-=======
->>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
-=======
->>>>>>> 16a86d6 (Updated to 1.2.7post14)
-=======
-  strategy:
-    matrix:
-      win_64_numpy1.16python3.6.____cpython:
-        CONFIG: win_64_numpy1.16python3.6.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_numpy1.16python3.7.____cpython:
-        CONFIG: win_64_numpy1.16python3.7.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_numpy1.16python3.8.____cpython:
-        CONFIG: win_64_numpy1.16python3.8.____cpython
-        UPLOAD_PACKAGES: 'True'
-      win_64_numpy1.19python3.9.____cpython:
-        CONFIG: win_64_numpy1.19python3.9.____cpython
-        UPLOAD_PACKAGES: 'True'
->>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
   timeoutInMinutes: 360
   variables:
     CONDA_BLD_PATH: D:\\bld\\
 
   steps:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 6b951ff (Rerendered with conda-forge)
-=======
->>>>>>> 5bd6ac8 (Rerendered with conda-forge)
-  timeoutInMinutes: 360
-  strategy:
-    maxParallel: 4
-    matrix:
-      win_python3.6.____cpython:
-        CONFIG: win_python3.6.____cpython
-        CONDA_BLD_PATH: D:\\bld\\
-        UPLOAD_PACKAGES: True
-      win_python3.7.____cpython:
-        CONFIG: win_python3.7.____cpython
-        CONDA_BLD_PATH: D:\\bld\\
-        UPLOAD_PACKAGES: True
-  steps:
-    # TODO: Fast finish on azure pipelines?
-    - script: |
-        ECHO ON
-        
-
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> Rerendered with conda-forge
-=======
->>>>>>> Re-rendered with conda smithy for windows
-=======
->>>>>>> 6b951ff (Rerendered with conda-forge)
-<<<<<<< HEAD
->>>>>>> bef9287 (Rerendered with conda-forge)
-=======
-=======
->>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
-<<<<<<< HEAD
->>>>>>> d74d53f (Re-rendered with conda smithy for windows)
-=======
-=======
->>>>>>> 5bd6ac8 (Rerendered with conda-forge)
-<<<<<<< HEAD
->>>>>>> 02042b7 (Rerendered with conda-forge)
-=======
-=======
->>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
-<<<<<<< HEAD
->>>>>>> 2e59837 (Re-rendered with conda smithy for windows)
-=======
-=======
->>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
->>>>>>> c7f1b73 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
     - script: |
         choco install vcpython27 -fdv -y --debug
       condition: contains(variables['CONFIG'], 'vs2008')
@@ -168,35 +61,7 @@ jobs:
 
     - task: CondaEnvironment@1
       inputs:
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         packageSpecs: 'python=3.6 conda-build conda "conda-forge-ci-setup=3" pip' # Optional
-=======
-        packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
->>>>>>> 6b951ff (Rerendered with conda-forge)
-=======
-        packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
->>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
-=======
-        packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
->>>>>>> 5bd6ac8 (Rerendered with conda-forge)
-=======
-        packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
->>>>>>> fc77e24 (Rerendered with conda-forge)
-=======
-        packageSpecs: 'python=3.6 conda-build conda conda-forge::conda-forge-ci-setup=3 pip' # Optional
->>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
-=======
-        packageSpecs: 'python=3.6 conda-build conda "conda-forge-ci-setup=3" pip' # Optional
->>>>>>> 16a86d6 (Updated to 1.2.7post14)
-=======
-        packageSpecs: 'python=3.6 conda-build conda "conda-forge-ci-setup=3" pip' # Optional
->>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
         installOptions: "-c conda-forge"
         updateConda: true
       displayName: Install conda-build and activate environment
@@ -235,12 +100,6 @@ jobs:
       env:
         PYTHONUNBUFFERED: 1
       condition: not(contains(variables['CONFIG'], 'vs2008'))
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     - script: |
         set "FEEDSTOCK_NAME=%BUILD_REPOSITORY_NAME:*/=%"
         call activate base
@@ -257,52 +116,4 @@ jobs:
         BINSTAR_TOKEN: $(BINSTAR_TOKEN)
         FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
         STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
-=======
-=======
->>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
-=======
->>>>>>> 5bd6ac8 (Rerendered with conda-forge)
-=======
->>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
-=======
-=======
->>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
-    - script: |
-        set "FEEDSTOCK_NAME=%BUILD_REPOSITORY_NAME:*/=%"
-        call activate base
-        validate_recipe_outputs "%FEEDSTOCK_NAME%"
-      displayName: Validate Recipe Outputs
-<<<<<<< HEAD
->>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
-=======
->>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
-
-    - script: |
-        set "GIT_BRANCH=%BUILD_SOURCEBRANCHNAME%"
-        set "FEEDSTOCK_NAME=%BUILD_REPOSITORY_NAME:*/=%"
-        call activate base
-        upload_package --validate --feedstock-name="%FEEDSTOCK_NAME%" .\ ".\recipe" .ci_support\%CONFIG%.yaml
-      displayName: Upload package
-      env:
-        BINSTAR_TOKEN: $(BINSTAR_TOKEN)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 6b951ff (Rerendered with conda-forge)
-=======
->>>>>>> c0633e0 (Re-rendered with conda smithy for windows)
-=======
->>>>>>> 5bd6ac8 (Rerendered with conda-forge)
-=======
->>>>>>> 1c384c7 (Re-rendered with conda smithy for windows)
-=======
-        FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
-        STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
->>>>>>> 2b0ab3a (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.7.3, and conda-forge-pinning 2020.05.19.09.34.36)
-=======
-        FEEDSTOCK_TOKEN: $(FEEDSTOCK_TOKEN)
-        STAGING_BINSTAR_TOKEN: $(STAGING_BINSTAR_TOKEN)
->>>>>>> 87e1db5 (MNT: Re-rendered with conda-build 3.18.9, conda-smithy 3.8.6, and conda-forge-pinning 2021.01.31.00.18.44)
       condition: and(succeeded(), not(eq(variables['UPLOAD_PACKAGES'], 'False')))

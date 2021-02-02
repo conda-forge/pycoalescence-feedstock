@@ -38,8 +38,8 @@ class TestImports(unittest.TestCase):
 class TestBasicSimulation(unittest.TestCase):
     """Tests that a very basic simulation can be performed. """
 
-	@classmethod
-	def setUpClass(cls):
+    @classmethod
+    def setUpClass(cls):
 		"""Runs a very basic simulation."""
 		from pycoalescence import Simulation
 		cls.sim = Simulation(logging_level=50)

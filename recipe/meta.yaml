@@ -1,6 +1,6 @@
 {% set name = "pycoalescence" %}
 {% set version = "1.2.7.post16" %}
-{% set sha256 = "667756d993e1b7c5f7c5c3d58fa7316a4f5a48023152848c045f9eca0a0f122d" %}
+{% set sha256 = "6810adacc2a64005ccc427e7f21bf620ee725e351daab5092aa990420f64b7e1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,8 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  # url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://test-files.pythonhosted.org/packages/69/7a/86c68722573507df5c3407fa598832dba32ec186ba610b80b32463ee1306/
   sha256: {{ sha256 }}
 
 build:

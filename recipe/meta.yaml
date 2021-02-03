@@ -9,7 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   # url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  url: https://test-files.pythonhosted.org/packages/69/7a/86c68722573507df5c3407fa598832dba32ec186ba610b80b32463ee1306/
+  url: https://test-files.pythonhosted.org/packages/69/7a/86c68722573507df5c3407fa598832dba32ec186ba610b80b32463ee1306/pycoalescence-1.2.7.post17.tar.gz
   sha256: {{ sha256 }}
 
 build:

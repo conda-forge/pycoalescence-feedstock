@@ -8,8 +8,8 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  # url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  url: https://test-files.pythonhosted.org/packages/23/6a/4cc9a555bb6452ca87f202c11002d5daea0260243b7e50cc455ab4f3665a/pycoalescence-1.2.7.post20.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  # url: https://test-files.pythonhosted.org/packages/23/6a/4cc9a555bb6452ca87f202c11002d5daea0260243b7e50cc455ab4f3665a/pycoalescence-1.2.7.post20.tar.gz
   sha256: {{ sha256 }}
 
 build:

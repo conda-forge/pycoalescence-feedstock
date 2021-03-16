@@ -1,6 +1,6 @@
 {% set name = "pycoalescence" %}
-{% set version = "1.2.8a1" %}
-{% set sha256 = "d28ecac1bec9d962c2c4541c043d7cf36963c642640125b0436958077fbb2785" %}
+{% set version = "1.2.8" %}
+{% set sha256 = "21f407779b066935bc997125c25d3f56ef6791caf0d703e5387a46b764be36ce" %}
 
 package:
   name: {{ name|lower }}

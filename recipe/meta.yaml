@@ -1,5 +1,5 @@
 {% set name = "pycoalescence" %}
-{% set version = "1.2.7.post20" %}
+{% set version = "1.2.8.alpha1" %}
 {% set sha256 = "886a50bc9ff1871b813519f87657c3119ce9a01529ceb621716548a07ebb1301" %}
 
 package:
@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   detect_binary_files_with_prefix: true
 
@@ -21,6 +21,7 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - cmake >=3.6
+    - cython
 
   host:
     - python
@@ -43,6 +44,7 @@ requirements:
     - scipy
     - pandas
     - configparser  # [py < 30]
+    - cython
 
 test:
   imports:

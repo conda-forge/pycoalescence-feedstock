@@ -28,11 +28,10 @@ class TestImports(unittest.TestCase):
     def testImportNecsim(self):
         """Tests that necsim imports correctly."""
         try:
-            import pycoalescence.necsim.libnecsim as libnecsim
-            from pycoalescence.necsim import libnecsim
+            from pycoalescence.necsim.necsim import CSpatialSimulation
 
-            if libnecsim is None:
-                raise ImportError("libnecsim is None.")
+            if CSpatialSimulation is None:
+                raise ImportError("CSpatialSimulation is None.")
         except ImportError as ie:
             self.fail("Cannot import c++ libnecsim module: {}".format(ie))
 

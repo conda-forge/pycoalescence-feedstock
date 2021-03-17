@@ -32,6 +32,7 @@ requirements:
     - matplotlib
     - numpy >=1.11.0
     - configparser  # [py < 30]
+    - scikit-build
 
   run:
     - python

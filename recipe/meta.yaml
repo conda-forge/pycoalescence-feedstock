@@ -1,6 +1,6 @@
 {% set name = "pycoalescence" %}
-{% set version = "1.2.7.post20" %}
-{% set sha256 = "886a50bc9ff1871b813519f87657c3119ce9a01529ceb621716548a07ebb1301" %}
+{% set version = "1.2.8.post6" %}
+{% set sha256 = "d01e41f78c29cf135415ced037c77cf168bf11a9b8d6b6b43d7625b8a79430ae" %}
 
 package:
   name: {{ name|lower }}
@@ -8,15 +8,13 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  # url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  url: https://test-files.pythonhosted.org/packages/23/6a/4cc9a555bb6452ca87f202c11002d5daea0260243b7e50cc455ab4f3665a/pycoalescence-1.2.7.post20.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   detect_binary_files_with_prefix: true
-  skip: true  # [(win and vc<19)]
 
 requirements:
   build:
@@ -25,6 +23,7 @@ requirements:
 
   host:
     - python
+    - cython
     - pip
     - setuptools
     - boost-cpp >=1.60.0
@@ -33,6 +32,7 @@ requirements:
     - matplotlib
     - numpy >=1.11.0
     - configparser  # [py < 30]
+    - scikit-build
 
   run:
     - python

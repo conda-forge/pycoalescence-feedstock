@@ -54,7 +54,7 @@ about:
   home: https://github.com/thompsonsed/pycoalescence/
   license: MIT
   license_file: LICENSE.txt
-  summary: 'Ecological simulator for spatially explicit neutral models using coalescence methods'
+  summary: Ecological simulator for spatially explicit neutral models using coalescence methods
   description: |
     pycoalescence is an API for easy interfacing with the necsim c++ neutral
     simulator for ecological models under the effects of
